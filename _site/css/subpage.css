@@ -58,7 +58,7 @@ html, body {
   position: relative;
   left: -50%;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .miniNavColumn > .miniNavColumnlist {
@@ -84,80 +84,64 @@ html, body {
   color: black;
 }
 
-/* IMAGE COLUMN */
+/* PROJECT COLUMN */
 
 .imageColumn {
   width: 100%;
   flex-shrink: 1;
   flex-basis: 600;
   background-color: white;
+
 }
 
-.introtext {
+.projectsintrotext {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20;
   line-height: 1.5em;
-  height: 150px;
   width: 680px;
+  color: black;
   min-width: 375px;
   background-color: white;
-  margin: 30px auto 50px;
+  margin: 0px auto 50px;
+  text-align: justify;
+}
+
+.projectsintrotext h1 {
+  text-align: center;
+  margin: auto;
+  line-height: 1em;
 }
 
 .imagesetup {
-  display: flex;
-  flex-wrap: wrap;
-  width: 60%;
-  color: red;
-  min-width: 680px;
-  max-width: 800px;
-  background: white;
-  margin: 75px auto;
-}
-.imagesetup >* {
-  flex: 0 0 50%;
-  height: 300px;
-  background: white;
-  margin-bottom: 10%;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 60%;
+  min-width: 375px;
+
 }
 
-.image {
-  box-sizing: border-box;
-  border: 5px solid black;
-  width: 50%;
+ .imagesetup img {
+  max-width: 100%;
+  min-height: 300px;
+
 }
 
-.image img {
-  width: 100%;
-  height: 100%;
-}
-
-.image img:hover {
-    filter: alpha(opacity=80);
-    opacity: .5;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  flex-grow: 0;
-  width: 100%;
-  height: 100px;
-}
 
 
 /* ADJUSTMENTS FOR SMALL SCREEN */
 
 @media only screen and (max-width: 1000px) {
-  .introtext {
+  .projectsintrotext {
     width: 60%;
 }
 }
 
+
 @media only screen and (max-width: 1000px) {
-  .introtext span {
-    display: none;
+  .projectsintrotext h1 {
+    width: 100%;
+    margin: auto;
+    line-height: 1em;
 }
 }
 
@@ -172,20 +156,20 @@ html, body {
   }
 }
 
-
 @media only screen and (max-width: 700px) {
 .imagesetup {
-  display: flex;
   background-color: white;
   min-width: 375px;
   margin-top: 50px;
 }
 }
 
+
+
 @media only screen and (max-width: 700px) {
     .imagesetup >* {
       flex: 0 0 100%;
-      height: 300px;
+      height: 250px;
       min-width: 375px;
       background-color: white;
       margin: 20px auto;
