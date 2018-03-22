@@ -30,18 +30,18 @@ html, body {
 
 .navColumn a{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20;
+    font-size: 25px;
     color: black;
     text-decoration: none;
 }
 
 .navColumn li {
   list-style: none;
-  margin: 100px auto;
-  border-bottom: 1px solid black;
+  margin: 50px 20px;
 }
 
 .navColumn ul {
+  margin-top: 200px;
   list-style-type: none;
 }
 
@@ -95,24 +95,31 @@ html, body {
 
 .introtext {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
   font-size: 20;
+  height: 20px;
   line-height: 1.5em;
-  height: 150px;
   width: 680px;
   min-width: 375px;
   background-color: white;
   margin: 30px auto 50px;
 }
 
+  .introtext p {
+    position: relative;
+    text-align:left;
+  }
+
 .imagesetup {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   width: 60%;
   color: red;
   min-width: 680px;
   max-width: 800px;
   background: white;
-  margin: 75px auto;
+  margin: 200px auto;
 }
 .imagesetup >* {
   flex: 0 0 50%;
@@ -123,7 +130,7 @@ html, body {
 
 .image {
   box-sizing: border-box;
-  border: 5px solid black;
+  border: 1px solid black;
   width: 50%;
 }
 
@@ -151,22 +158,24 @@ html, body {
 
 @media only screen and (max-width: 1000px) {
   .introtext {
+    min-width: 300px;
     width: 60%;
+    position: relative;
 }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
   .introtext span {
     display: none;
 }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .navColumn {
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .miniNavColumn {
     display: unset;
   }
@@ -176,17 +185,18 @@ html, body {
 @media only screen and (max-width: 700px) {
 .imagesetup {
   display: flex;
+  position: relative;
   background-color: white;
-  min-width: 375px;
-  margin-top: 50px;
+  min-width: 300px;
 }
 }
 
 @media only screen and (max-width: 700px) {
     .imagesetup >* {
       flex: 0 0 100%;
+      position: relative;
       height: 300px;
-      min-width: 375px;
+      min-width: 300px;
       background-color: white;
       margin: 20px auto;
     }

@@ -126,6 +126,19 @@ html, body {
 
 }
 
+.page h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page h2 {
+  margin-bottom: 0.5em;
+}
+.page h4 {
+  margin-bottom: 1em;
+}
+
+
 
 
 /* ADJUSTMENTS FOR SMALL SCREEN */

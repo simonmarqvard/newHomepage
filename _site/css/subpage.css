@@ -20,34 +20,34 @@ html, body {
 
  /* NAVIGATION BLOCK */
 
-.navColumn {
-  position: fixed;
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  flex-basis: 150px;
-}
+ .navColumn {
+   position: fixed;
+   flex-grow: 0;
+   flex-shrink: 0;
+   background-color: white;
+   flex-basis: 150px;
+ }
 
-.navColumn a{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20;
-    color: black;
-    text-decoration: none;
-}
+ .navColumn a{
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 25px;
+     color: black;
+     text-decoration: none;
+ }
 
-.navColumn li {
-  list-style: none;
-  margin: 100px auto;
-  border-bottom: 1px solid black;
-}
+ .navColumn li {
+   list-style: none;
+   margin: 50px 20px;
+ }
 
-.navColumn ul {
-  list-style-type: none;
-}
+ .navColumn ul {
+   margin-top: 200px;
+   list-style-type: none;
+ }
 
-.navColumn a:hover {
-  color : red;
-}
+ .navColumn a:hover {
+   color : red;
+ }
 
 /* MINI NAVIGATION - VISIBLE WHEN MINIMIZING SCREEN */
 
@@ -130,27 +130,27 @@ html, body {
 
 /* ADJUSTMENTS FOR SMALL SCREEN */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .projectsintrotext {
     width: 60%;
 }
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .projectsintrotext h1 {
-    width: 100%;
+    width: 100px;
     margin: auto;
     line-height: 1em;
 }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .navColumn {
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .miniNavColumn {
     display: unset;
   }
@@ -172,6 +172,6 @@ html, body {
       height: 250px;
       min-width: 375px;
       background-color: white;
-      margin: 20px auto;
+      margin: 0px auto;
     }
 }
