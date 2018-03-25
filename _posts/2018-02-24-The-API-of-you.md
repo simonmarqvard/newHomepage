@@ -9,8 +9,10 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>
 
 This was the first week of class. Our homework was to create a something using something. For next week i want to use google maps to create an API and geolocate myself.
 
-<img class="pull-left" src="http://placekitten.com/g/400/200"
+
+<img src="http://placekitten.com/g/400/200"
      alt="kitten">
+
 
 Whenever I find myself growing grim about the mouth; whenever it is a damp,
 drizzly November in my soul; whenever I find myself involuntarily pausing

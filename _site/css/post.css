@@ -103,6 +103,14 @@ html, body {
   margin: 50px auto 50px;
   text-align: justify;
 }
+
+.blogcolumn img {
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+}
+
 /* NOTE: BLOGPROFILES CLASS */
 .blogprofiles {
   display: flex;
@@ -223,11 +231,13 @@ margin-bottom: 15px;
 
 }
 
- .imagesetup img {
+ /* .imagesetup img {
   max-width: 100%;
   min-height: 300px;
 
-}
+} */
+
+
 
 
 

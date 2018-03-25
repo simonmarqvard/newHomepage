@@ -114,6 +114,11 @@ html, body {
 
   }
 
+  .introtext p strong {
+
+    font-size: 20px;
+  }
+
 
 
 .imagesetup {
@@ -131,7 +136,7 @@ html, body {
   flex: 0 0 50%;
   height: 250px;
   background: white;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
 }
 
 .image {
