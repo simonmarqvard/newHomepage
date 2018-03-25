@@ -10,13 +10,12 @@
   {% include navigation.html %}
 
 	<div class="imageColumn">
-
-    {{ content }}
-
-
-  {% include Mininavigationsubpage.html %}
-
-
-
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div>{% include Mininavigationsubpage.html %}</div>
+        {{ content }}
+     </div>
+   </div>
+ </div>
 </body>
 </html>

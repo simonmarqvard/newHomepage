@@ -8,7 +8,8 @@ html, body {
  .pageWrapper {
    display: flex;
    flex-direction: column;
-   min-height: 100vh;
+   max-width: 1200px;
+   margin: 0 auto;
  }
 
 
@@ -53,12 +54,12 @@ html, body {
 
 .miniNavColumn {
   display: none;
-  background-color: white;
-  float: right;
   position: relative;
+  float: right;
   left: -50%;
   text-align: left;
   margin-bottom: 20px;
+  background-color: white;
 }
 
 .miniNavColumn > .miniNavColumnlist {
@@ -68,11 +69,13 @@ html, body {
 
 .miniNavColumn ul {
  list-style-type: none;
+
 }
 
 
 .miniNavColumn ul li {
- float: left
+ float: left;
+ background-color: white;
 }
 
 .miniNavColumn a {
@@ -97,18 +100,21 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   font-size: 20;
-  height: 20px;
   line-height: 1.5em;
   width: 680px;
   min-width: 375px;
+  margin: 25px auto 0px;
   background-color: white;
-  margin: 30px auto 50px;
 }
 
   .introtext p {
+    margin-top: 100px;
     position: relative;
     text-align:left;
+
   }
+
+
 
 .imagesetup {
   display: flex;
@@ -119,13 +125,13 @@ html, body {
   min-width: 680px;
   max-width: 800px;
   background: white;
-  margin: 200px auto;
+  margin: 25px auto;
 }
 .imagesetup >* {
   flex: 0 0 50%;
-  height: 300px;
+  height: 250px;
   background: white;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .image {
@@ -160,7 +166,12 @@ html, body {
   .introtext {
     min-width: 300px;
     width: 60%;
-    position: relative;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  .introtext p {
+    text-align: justify;
 }
 }
 
@@ -173,21 +184,24 @@ html, body {
 @media only screen and (max-width: 1100px) {
   .navColumn {
     display: none;
+    width: 100vw;
 }
 
 @media only screen and (max-width: 1100px) {
   .miniNavColumn {
     display: unset;
+    margin-left: -15px;
   }
 }
 
 
 @media only screen and (max-width: 700px) {
 .imagesetup {
+  margin: auto;
   display: flex;
   position: relative;
   background-color: white;
-  min-width: 300px;
+  min-width: 305px;
 }
 }
 
@@ -195,9 +209,10 @@ html, body {
     .imagesetup >* {
       flex: 0 0 100%;
       position: relative;
-      height: 300px;
-      min-width: 300px;
+      height: 225px;
+      min-width: 305px;
+      width: 100vw;
       background-color: white;
-      margin: 20px auto;
+      margin: 10px auto;
     }
 }

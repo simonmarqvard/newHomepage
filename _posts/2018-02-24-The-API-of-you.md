@@ -1,18 +1,13 @@
 ---
 layout: post
-title: This is the title of the post
-postHero: /images/shark.jpg
-author: Me, Myself, and I
-authorTwitter: http://twitter.com/mhartl
-gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
+title: The API of you
+postHero: /images/download.jpg
+author: Simon M. Jensen
+gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
 ---
 
-Call me *Ishmael*. Some years ago–*never mind how long
-precisely*–having little or no money in my purse, and nothing
-particular to interest me on shore, I thought I would sail about a little
-and see the watery part of the world. It is a way I have of driving off
-the spleen and regulating the circulation.
+This was the first week of class. Our homework was to create a something using something. For next week i want to use google maps to create an API and geolocate myself.
 
 <img class="pull-left" src="http://placekitten.com/g/400/200"
      alt="kitten">
