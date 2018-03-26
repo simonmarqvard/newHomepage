@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% include headaboutpage.html %}
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  {% include navigation.html %}
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div>{% include Mininavigationsubpage.html %}</div>
+        {{ content }}
+     </div>
+   </div>
+ </div>
+</body>
+</html>

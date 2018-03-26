@@ -113,18 +113,26 @@ html, body {
   line-height: 1em;
 }
 
+.projectsintrotext a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
 .imagesetup {
   text-align: center;
   margin: 30px auto;
-  max-width: 60%;
-  min-width: 300px;
+  width: 80%;
+  max-width: 450px;;
+  height: auto;
+
 
 }
 
  .imagesetup img {
   max-width: 100%;
-  min-height: 300px;
-
+  min-height: 350px;
+  height: auto;
 }
 
 
@@ -162,6 +170,7 @@ html, body {
 .imagesetup {
   background-color: white;
   min-width: 300px;
+  height: auto;
   margin-top: 50px;
 }
 }
@@ -171,7 +180,6 @@ html, body {
 @media only screen and (max-width: 700px) {
     .imagesetup >* {
       flex: 0 0 100%;
-      height: 250px;
       min-width: 300px;
       background-color: white;
       margin: 0px auto;
