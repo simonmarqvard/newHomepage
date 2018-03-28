@@ -19,6 +19,11 @@ html, body {
 }
 
 
+.aroundImage {
+  text-align: center;
+}
+
+
  /* NAVIGATION BLOCK */
 
  .navColumn {

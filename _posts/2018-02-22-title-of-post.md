@@ -15,10 +15,14 @@ particular to interest me on shore, I thought I would sail about a little
 and see the watery part of the world. It is a way I have of driving off
 the spleen and regulating the circulation.
 
-<img class="pull-left" src="http://placekitten.com/g/400/200"
+<div class= "aroundImage">
+<img src="http://placekitten.com/g/400/200"
      alt="kitten">
+</div>
 
-<img src="/images/Breath.jpg">
+<div class= "aroundImage" style="width: 400; height:auto;">
+<img src="/images/Breath.jpg" alt = "breath">
+</div>
 
 Whenever I find myself growing grim about the mouth; whenever it is a damp,
 drizzly November in my soul; whenever I find myself involuntarily pausing
