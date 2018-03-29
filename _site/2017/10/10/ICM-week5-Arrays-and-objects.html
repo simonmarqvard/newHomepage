@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/blogpage.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+	<title>blogpage</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="http://127.0.0.1:4000/"><strong>Home</strong></a></li>
+    <li><a href="http://127.0.0.1:4000/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="http://127.0.0.1:4000/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="http://127.0.0.1:4000/"><strong>Home</strong></a></li>
+        <li><a href="http://127.0.0.1:4000/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="http://127.0.0.1:4000/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> ICM - Arrays and Objects </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by: Simon M. Jensen</span>
+    <span> - October 10, 2017</span>
+  </div>
+
+
+
+        <p>This week in class we were introduced to objects and arrays. Objects it turns out, has changed slightly – so that it is now a class and a constructor you use to create an object. After becoming more familiar with this it now makes perfect sense. I spent a lot of time on this weeks quiz. I found it very difficult. Especially the challenge and the SuperDuperChallenge – with some help i managed to sort it out.</p>
+
+<p>This weeks assignment was to design a sketch in an object oriented fashion. We were also allowed to reorganize an already existing sketch.</p>
+
+<p>I decided to create a new sketch to play around with the array functions – but also to get better at communication between objects.</p>
+
+<p>My intentions were to create a sketch where boxes would land and stack on each other. The sketch has some flaws as I couldn’t sort out the formula for when the boxes collide. <em>UPDATE</em> The code should now be fixed. Instead of using a dist function to calculate the distance between the squares I did two separate disx and disy calculations with absolute(). This worked a lot better as you can see.</p>
+
+<iframe frameborder="0" style="width: 100%; height: auto;" src="/blog_assets/2017-10-10/sketch/index.html"></iframe>
+
+<p>The code looked as follows:</p>
+
+<div>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="kd">class</span> <span class="nx">Square</span> <span class="p">{</span>
+
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">w</span><span class="p">,</span> <span class="nx">h</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">w</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">h</span> <span class="o">=</span> <span class="nx">h</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">speed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">display</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">rectMode</span><span class="p">(</span><span class="nx">CENTER</span><span class="p">);</span>
+      <span class="nx">noStroke</span><span class="p">();</span>
+      <span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">);</span>
+      <span class="c1">// rect(this.x, this.y, this.w, this.h);</span>
+      <span class="c1">// noFill();</span>
+      <span class="nx">stroke</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+      <span class="nx">rect</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">w</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">h</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+
+
+    <span class="p">}</span>
+    <span class="nx">falling</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">speed</span><span class="p">;</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">&gt;</span> <span class="nx">height</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">w</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">height</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">w</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nx">collide</span><span class="p">(</span><span class="nx">otherSquare</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//othersquare is stand in for other balls in sketch array</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">otherSquare</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//if the ball is not itself</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">otherSquare</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">!==</span> <span class="k">this</span><span class="p">)</span> <span class="p">{</span>
+          <span class="c1">//calculate distance between objects and determine if they collide. If they do, stop moving.</span>
+          <span class="c1">//   var dis = dist(this.x, this.y, otherSquare[i].x, otherSquare[i].y);</span>
+          <span class="kd">var</span> <span class="nx">disx</span> <span class="o">=</span> <span class="nx">abs</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="nx">otherSquare</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">x</span><span class="p">);</span>
+          <span class="kd">var</span> <span class="nx">disy</span> <span class="o">=</span> <span class="nx">abs</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">otherSquare</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">y</span><span class="p">);</span>
+          <span class="c1">// if (disx &lt; this.x + this.h / 2 + otherSquare[i].x + otherSquare[i].h / 2 &amp;&amp; disy &lt; this.w / 2 + otherSquare[i].w / 2) {</span>
+          <span class="k">if</span> <span class="p">(</span><span class="nx">disx</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">w</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">disy</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">h</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="k">this</span><span class="p">.</span><span class="nx">speed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="nx">removes</span><span class="p">()</span> <span class="p">{</span>
+      <span class="c1">//drive squares out of view</span>
+      <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">speed</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">==</span> <span class="nx">height</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">w</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+
+      <span class="p">}</span>
+
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">//create an array</span>
+  <span class="kd">var</span> <span class="nx">squares</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+
+  <span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">);</span>
+    <span class="c1">//initialize squares</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">squares</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">squares</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">Square</span><span class="p">());</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">squares</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">display</span><span class="p">();</span>
+      <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">falling</span><span class="p">();</span>
+      <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">collide</span><span class="p">(</span><span class="nx">squares</span><span class="p">);</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsPressed</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">squares</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">removes</span><span class="p">();</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">mousePressed</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">squares</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">Square</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">));</span>
+
+  <span class="p">}</span></code></pre></figure>
+
+</div>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

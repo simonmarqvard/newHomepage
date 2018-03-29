@@ -24,6 +24,16 @@ html, body {
 }
 
 
+.aroundSketch {
+  width: 500px;
+  height: 600px;
+}
+
+#defaultCanvas0{
+  width: 100%;
+}
+
+
  /* NAVIGATION BLOCK */
 
  .navColumn {
