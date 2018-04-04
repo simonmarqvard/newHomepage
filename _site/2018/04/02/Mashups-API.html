@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+	<title>blogpage</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="http://127.0.0.1:4000/"><strong>Home</strong></a></li>
+    <li><a href="http://127.0.0.1:4000/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="http://127.0.0.1:4000/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="http://127.0.0.1:4000/"><strong>Home</strong></a></li>
+        <li><a href="http://127.0.0.1:4000/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="http://127.0.0.1:4000/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Mashups API - D3js </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by: Simon M. Jensen</span>
+    <span> - April 02, 2018</span>
+  </div>
+
+
+
+        <p>This week we were introduced to different programs for animation: three.js and d3.js. Our
+assignment was to get familiar with one of them and create a sketch using data from a different source.</p>
+
+<p>For a while I have been wanting to get more familiar with d3. This week was my chance. I have seen some great animations made using this library and I see a lot of potential in the things you can create with it. To learn the basics I did some online tutorials - to figure out the syntax.</p>
+
+<p>The first sketch was creating a line of circles. Their radius was based on simple dataset.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-04-02/d3simplecircles.png" alt="circles" />
+</div>
+
+<p>The next task was to create a pie-chart / donut-chart. These types of charts turned out to be very similar in their structure.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-04-02/pie.png" alt="circles" />
+</div>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-04-02/donut.png" alt="circles" />
+</div>
+
+<p>When learning more about the structure. I wanted to do something with animation. I found a well documented site using <a href="https://github.com/topojson/topojson">topojson</a> a library that would outline different countries using a great number of line segments referred to as arcs. I downloaded the outline of Denmark and all its municipalities. With some difficulties I managed to make it work - especially finding my way into the interesting shapes was a struggle. After some work I had the outline of the map down. I then wanted it to be interactive and added a transition to each svg using the .on(mouseover, _____) function. And some minor fade-in effects when the document had loaded.</p>
+
+<div>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span> <span class="o">!</span><span class="nx">DOCTYPE</span> <span class="nx">html</span> <span class="o">&gt;</span>
+  <span class="o">&lt;</span>
+  <span class="nx">html</span> <span class="o">&gt;</span>
+
+  <span class="o">&lt;</span>
+  <span class="nx">head</span> <span class="o">&gt;</span>
+  <span class="o">&lt;</span>
+  <span class="nx">meta</span> <span class="nx">charset</span> <span class="o">=</span> <span class="s2">"UTF-8"</span> <span class="o">&gt;</span>
+  <span class="o">&lt;</span>
+  <span class="nx">title</span> <span class="o">&gt;</span> <span class="nx">D3introsketch</span> <span class="o">&lt;</span> <span class="sr">/title&gt; </span><span class="err">&lt;
+</span>  <span class="nx">script</span> <span class="nx">src</span> <span class="o">=</span> <span class="s2">"https://d3js.org/d3.v3.min.js"</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="sr">/script&gt; </span><span class="err">&lt;
+</span>  <span class="nx">script</span> <span class="nx">src</span> <span class="o">=</span> <span class="s2">"http://d3js.org/topojson.v0.min.js"</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="sr">/script&gt; </span><span class="err">&lt;
+</span><span class="nx">link</span> <span class="nx">rel</span> <span class="o">=</span> <span class="s2">"stylesheet"</span>
+<span class="nx">href</span> <span class="o">=</span> <span class="s2">"style.css"</span> <span class="o">&gt;</span>
+
+  <span class="o">&lt;</span>
+  <span class="sr">/script</span><span class="err">&gt;
+</span>
+  <span class="o">&lt;</span>
+  <span class="nx">body</span> <span class="o">&gt;</span>
+  <span class="o">&lt;</span>
+  <span class="nx">script</span> <span class="o">&gt;</span>
+  <span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mi">900</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mi">700</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">projection</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">geo</span><span class="p">.</span><span class="nx">mercator</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">center</span><span class="p">([</span><span class="mf">11.7</span><span class="p">,</span> <span class="mf">56.3</span><span class="p">])</span>
+  <span class="p">.</span><span class="nx">scale</span><span class="p">(</span><span class="mi">6500</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">translate</span><span class="p">([</span><span class="nx">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">height</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
+
+<span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">"body"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s2">"svg"</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"width"</span><span class="p">,</span> <span class="nx">width</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"height"</span><span class="p">,</span> <span class="nx">height</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">geo</span><span class="p">.</span><span class="nx">path</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">projection</span><span class="p">(</span><span class="nx">projection</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"g"</span><span class="p">);</span>
+
+<span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="s2">"Denmark.json"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">topology</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">topology</span><span class="p">.</span><span class="nx">objects</span><span class="p">.</span><span class="nx">DNK_adm2</span><span class="p">.</span><span class="nx">geometries</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">properties</span><span class="p">.</span><span class="nx">NAME_2</span><span class="p">)</span>
+  <span class="c1">//console.log(topology.objects.IND_adm1.geometries[0].properties.ID_1)</span>
+  <span class="nx">g</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">"path"</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="nx">topojson</span><span class="p">.</span><span class="nx">object</span><span class="p">(</span><span class="nx">topology</span><span class="p">,</span> <span class="nx">topology</span><span class="p">.</span><span class="nx">objects</span><span class="p">.</span><span class="nx">DNK_adm2</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">geometries</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">enter</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"path"</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"class"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//return "state" + topology.objects.IND_adm1.geometries[i].properties.ID_1;</span>
+      <span class="k">return</span> <span class="s2">"state"</span><span class="p">;</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"mouseover"</span><span class="p">,</span> <span class="nx">handlemouseover</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"mouseout"</span><span class="p">,</span> <span class="nx">handlemouseout</span><span class="p">)</span>
+
+    <span class="c1">// .attr("text-anchor", "middle")</span>
+    <span class="c1">// .text(function(d,i) {</span>
+    <span class="c1">//  return topology.objects.DNK_adm2.geometries[0].properties.NAME_2</span>
+    <span class="c1">// })</span>
+
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"d"</span><span class="p">,</span> <span class="nx">path</span><span class="p">);</span>
+<span class="p">})</span>
+
+<span class="nx">d3</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">"svg"</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"class"</span><span class="p">,</span> <span class="s2">"path"</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">"fill"</span><span class="p">,</span> <span class="s2">"lightgreen"</span><span class="p">);</span>
+
+
+<span class="kd">function</span> <span class="nx">handlemouseover</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="s2">"translate(0, -50)"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">handlemouseout</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="s2">"translate(0, 0)"</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="nx">d3</span><span class="p">.</span><span class="nx">selection</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">moveToFront</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">};</span> <span class="o">&lt;</span>
+<span class="sr">/script</span><span class="err">&gt;
+</span>
+<span class="o">&lt;</span>
+<span class="sr">/body</span><span class="err">&gt;
+</span>
+
+<span class="o">&lt;</span>
+<span class="sr">/html&gt;</span></code></pre></figure>
+
+</div>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

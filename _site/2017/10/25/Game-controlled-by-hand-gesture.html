@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/blogpage.css">
+  <link rel="stylesheet" href="/css/post.css">
 	<link rel="stylesheet" href="/css/monokai.css">
 	<title>blogpage</title>
 
@@ -78,14 +78,18 @@ We used sensors of the brand SainSmart HC-SR04. We wanted to have two. One contr
 <p>Step 1: Getting one sensor to work
 The first thing we needed to do, was to get a sensor to work. We used a basic tutorial by Dejan Nedelkovski on the “How to mechatronics” webpage to arrange the trigger and echo sensors. This was pretty simple. We quickly realized that the sensor measurements we got from the sensor was all over the place – a small misplacement of the hand and we would get ranges that were far out of the range. For the correction of this we used a serial connection to a computer and drew an ellipse – we then used the ellipse to visualize the numbers we got from the sensor. We used p5 to write a code where we would only use the numbers within a certain range. When using the Arduino serial monitor we found that the ranges between 2cm and 50cm were very consistant – based on that we wrote a p5 sketch that would only us the numbers within that range. These numbers were pushed into a array and the average of all the numbers were calculated and used as either the xValue or yValue. The xValue and yValue was then mapped to the canvasWidth and Height, respectively. Some of the necessary adjustments during this phase was to figure out how far of a reach (physically) you wanted to the sensor to have – but also determining the length of your array for xPos and yPos. If the length of the array is long you are going to have a precise but slow response, whereas a small array will be more responsive but more vulnerable to small changes in the measures. This video shows what our initial measurements (before a proper correction) looked like:</p>
 
-<iframe src="https://player.vimeo.com/video/239939563" width="540" height="310" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="aroundSketch">
+<iframe src="https://player.vimeo.com/video/239939563" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
 
 <p>Step 2: Getting two sensors to work
 Setting up two sensors was not too complicated either. One thing to be aware of, that caused some trouble was that you can’t have two “pulseIn/EchoReads” simultaneously therefore the code needed to be rearranged to give two readings.
 Another thing that was added at this point was a Serial handshake. There was a lot of incoming data to the p5 sketch. The buffer filled up quickly and even the smallest error in the sketch would crash the browser – this was quickly fixed with a Serial-handshake.
 Now that we had two functioning sensors mapping the next step was to test the position of the sensors. What way to turn them? Where to place the xSensor and where to place the ySensor. At first the sensors were placed on a table facing the same area (like a coordinate system). When placing your hand on the table (as in the previous video) there would be a big hand-surface-area for the xSensor to detect whereas the ySensor would be reading the location based on the small area created by the top of your hand. For this setup to work it was necessary to hold something in your hand – like a cube or a glass. The following video shows how it worked. At this point we had also added a on/off switch and a light to indicate the on/off state.</p>
 
-<iframe src="https://player.vimeo.com/video/239942621" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="aroundSketch">
+<iframe src="https://player.vimeo.com/video/239942621" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
 
 <p>When testing different setups with the sensors we realized that the accuracy and general control was better when the sensors were pointing in different directions. Therefore we decided to change the control into something where you needed two hands for control instead of just one. The following is showing some of the different setups:</p>
 
@@ -116,7 +120,11 @@ After some testing (and many discussions) we created a final case and setup. It 
 
 <p>A simple game was created. Our thoughts were to create a game where you would need accuracy and therefore precision and concentration on your arm gestures.  Ideally, we wanted to create a maze, that you had to get through on time. However, we realized that collision between two objects is difficult when using Serial input from sensors like these. Instead we created a simple sketch similar to snake, where you had to move the curser into a certain area on the screen.</p>
 
-<iframe src="https://player.vimeo.com/video/239944387" width="540" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="aroundSketch">
+<iframe src="https://player.vimeo.com/video/239944387" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
+
+<p><br /></p>
 
 
     

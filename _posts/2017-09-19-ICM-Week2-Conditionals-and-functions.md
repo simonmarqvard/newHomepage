@@ -30,8 +30,9 @@ The image shows the illustration by Rune. It is a shape where you can drag each 
 I decided to approach this task using a “Circle” Object. My theory was that using a “isInside” and “mouseIsPressed” function you would be able to drag the circle around on the screen. I then initialized 3 additional circle-objects. These served as the corners of my square. The 4 circles were connected using a “beginShape” / “Endshape” function and the “fill” function was utilized to visualize the shape.
 It ended up looking like this:
 
-<iframe frameborder="0" style= "width: 100%; height: auto;"  src="/blog_assets/2017-09-19/sketch1/index.html" ></iframe>
-
+<div class="aroundSketch">
+<iframe frameborder="0" style= "width: 420; height: 420px;"  src="/blog_assets/2017-09-19/sketch1/index.html" ></iframe>
+</div>
 
 
 The code can be seen here:

@@ -27,10 +27,15 @@ For video collection we tried out different methods. We needed an oven that coul
 
 What some of our first footage looked like :
 
+<div class="aroundSketch">
 <iframe src="https://www.youtube.com/embed/cwGilCAUTA8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
 
+<br>
+
+<div class="aroundSketch">
 <iframe src="https://www.youtube.com/embed/JPvkFC9IqZg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
+</div>
 
 We went over the footage in class and talked about the things that worked and the things that didn't.
 We decided to try our footage again learning from our mistakes. Also, this time we gave ourselves a budget of 45$ (15$ each) to get a fish tank that would make our flooding scene look better.
@@ -54,4 +59,9 @@ Editing:
 Our second collection of footage was much better than the first. We all meet up to do the editing. We had to decide which clips were better and when to play with speeds and effects. First we had to come up with the music for the clip. At first we wanted something funny but when we heard "Grieg - In the hall of the mountain king" - we knew we wanted that for the piece!
 The collaboration between us worked really well. Although we sometimes had different opinions there was no hard feelings if something was changed or ideas were turned down. Our final infomercial looked like this.
 
-<iframe src="https://player.vimeo.com/video/238962390" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="aroundSketch">
+<iframe src="https://player.vimeo.com/video/238962390" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
+
+
+<br>
