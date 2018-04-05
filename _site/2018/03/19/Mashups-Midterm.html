@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+	<title>blogpage</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="http://127.0.0.1:4000/"><strong>Home</strong></a></li>
+    <li><a href="http://127.0.0.1:4000/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="http://127.0.0.1:4000/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="http://127.0.0.1:4000/"><strong>Home</strong></a></li>
+        <li><a href="http://127.0.0.1:4000/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="http://127.0.0.1:4000/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Mashups Midterm - Citibikes </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by: Simon M. Jensen</span>
+    <span> - March 19, 2018</span>
+  </div>
+
+
+
+        <p>For the “Mashups - creating with API’s” midterm we were asked to create a single page web experience that would respond to user input and return data from at least two public web API’s.</p>
+
+<p>My initial plan was to create a world map based on the twitter “trends” api. For that reason a spent a lot of time trying to retrieve the data from twitter. This introduced me to the o_auth - a strict way to protect data making it hard to access. Actually, it turned out that it couldn’t be done. However this assignment taught me much about HTTP requests and the necessary elements of a Ajax Jquery call.</p>
+
+<p>The structure requires you to include the jquery library.
+You then have to make an Jquery $.ajax request including:</p>
+<ul>
+  <li>Url</li>
+  <li>Headers (keys)</li>
+  <li>Type (‘GET’ ‘Post’)</li>
+  <li>DataType (‘json’ ‘jsonp’)</li>
+  <li>Error</li>
+  <li>Succes`</li>
+</ul>
+
+<p>Example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$.ajax({
+   url: webcamUrl,
+   headers: {
+     "X-Mashape-Key": mashapeKey,
+   },
+   type: 'GET',
+   dataType: "json",
+   error: function(err) {
+     console.log(err);
+   },
+   success: function(data) {
+     Gdata = data;
+     console.log("First data load");
+     next();
+     display();
+   }
+ })
+}
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Instead of the twitter API I decided to use data from <a href="https://opendata.cityofnewyork.us/">opendata New York</a>. I wanted to combine it with the google Maps API
+to get more familiar with this resource. I chose a dataset on the NY citibikes and plotted in the location of station - in addition to that I wanted each station to display the number of available bikes.</p>
+
+<p><br /></p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-03-19/bikesbirdview.png" alt="circles" />
+</div>
+
+<p><br /></p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-03-19/zoom.png" alt="circles" />
+</div>
+
+<p>I had some problems including live data into the sketch - receiving a CORS error - “Cross- Origin resource sharing” - No ‘Access-Control-Allow-Origin’. I later found out that this could be fixed by toggling on the CORS chrome extension from <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en">here</a>.</p>
+
+<p>Aside from this I played around with the geocode function, the marker function and also the streetview function. I set it up so that whenever a station was clicked you would zoom into the streetview of that particular station.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-03-19/street.png" alt="circles" />
+</div>
+
+<p>The full code from this project can be found on github <a href="https://github.com/simonmarqvard/mashupCitibikes">here</a></p>
+
+<p><br /></p>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

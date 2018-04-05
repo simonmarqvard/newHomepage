@@ -30,9 +30,12 @@ The next task was to create a pie-chart / donut-chart. These types of charts tur
      alt="circles">
 </div>
 
-When learning more about the structure. I wanted to do something with animation. I found a well documented site using [topojson](https://github.com/topojson/topojson) a library that would outline different countries using a great number of line segments referred to as arcs. I downloaded the outline of Denmark and all its municipalities. With some difficulties I managed to make it work - especially finding my way into the interesting shapes was a struggle. After some work I had the outline of the map down. I then wanted it to be interactive and added a transition to each svg using the .on(mouseover, _____) function. And some minor fade-in effects when the document had loaded.    
+When learning more about the structure. I wanted to do something with animation. I found a well documented site using [topojson](https://github.com/topojson/topojson) a library that would outline different countries using a great number of line segments referred to as arcs. I downloaded the outline of Denmark and all its municipalities. With some difficulties I managed to make it work - especially finding my way into the interesting shapes was a struggle. After some work I had the outline of the map down. I then wanted it to be interactive and added a transition to each svg using the .on(mouseover, _____) function. And some minor fade-in effects when the document had loaded.
 
+The next assignment will be to have each municipality display information. Also I would like to have the selected municipality move to the front when it is doing its animation.  
 
+The file can be seen here (it may be necessary to change the https request into a http in order for it to work):
+[D3js Sketch Denmark](http://simonmarqvard.github.io/d3firstSketch/)
 
 <div>
 {% highlight js %}
