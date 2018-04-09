@@ -305,4 +305,10 @@ margin-bottom: 15px;
       background-color: white;
       margin: 0px auto;
     }
+
+    iframe {
+      width: 100% !important;
+      height: auto !important;
+    }
+
 }

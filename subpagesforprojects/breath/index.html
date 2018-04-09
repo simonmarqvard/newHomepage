@@ -4,50 +4,71 @@ layout: projectpresentation
 
 
 <div class="projectsintrotext">
-  <h1> BREATH </h1>
-  <p>While modern life is full of job, family, academic and interpersonal
-    responsibilities, “Take the Money and Run” is a game that allows anyone to
-    live out their dreams of dropping our of the rat-race and traveling the world
-     (in a safe and much less expensive
-    way). Inspired in equal parts by Oregon Trail, Tamagotchi, and the oppressive
-     noise of the New York City Subway, this game attempts to do very little in a
-      fun way. This was a collaboration with Simon Marqvard. Technologies used:
-      Mappa is a Javascript
-    framework which wraps the functionality of several different mapping APIs
-    together. It was used to generate maps and the coordinate positions for map
-    overlays. The underlying map provider we used was the open-source Leaflet.js.
-     P5.js provided most
-    of the visual UX/UI elements of the project, including generating short
-     humorous ‘postcards’ for the players with data pulled from various sources,
-      including Flickr’s API, Node.js in conjunction with socket.io controlled
-      our back-end elements, including
-    our interface with our Firebase database, which housed player data and
-    allowed the program to run from Heroku.</p>
+  <h1> ALIVE </h1>
+  <p> The "Alive" project was created in collaboration with <a href="https://sandyhsieh.com/info">Sandy Hsieh</a>. The project aimed
+       to explore which biological measures we could wirelessly transmit to a computer from a functional wearable.
+       ECG, EMG, pulse and respiration were all tested for this project, with pulse and respiration being
+       our final endpoints due to the precision of the measurements as well as
+       a higher degree of self-control making these measures interesting to interact with.
+       The project consisted of three pieces.
 
-    <div class="imagesetup">
-      <img src="/images/Takethemoney.jpg" alt ="image">
+       <ul>
+       <li> A chest strap with built in stretch-conductive-fabric. Measuring the expansion of the lungs. Making it easy for
+       users to interact with the project. </li>
+       <li> A 3d printed case containing a microcontroller connected to a battery and a bluetooth
+       transmitter sending data from the fabric to a computer. </li>
+       <li> A shirt with built in stretch-conductive-fabric and a pocket to contain the transmitting case.</li>
+     </ul>
+  </p>
+
+  <div class="imagesetup">
+   <a href="/subpagesforprojects/breath/alive.pdf"><img src="/subpagesforprojects/breath/shirt.png" alt ="image"></a>
+   <span> The information folder - describing the individual parts in our project. Full file
+     can be seen by clicking the image. </span>
+    </div>
+
+
+      <p>
+       With this project we wanted to visualize the respiration of the users and have people breathe
+       in a certain way by following a pattern displayed in front of them. Respiration was visualized
+       as a line going up when people inhaled and going down when people exhaled. The x and y scale would adjust
+       according to peoples max and min values providing a similar visual output for the user regardless of age, size and
+       physical shape.
+       Three different breathingpatterns were implemented to make the user breathe in certain ways. After the three exercises
+       the user would receive a history of what their repiration looked like.
+      </p>
+
+      <div class="imagesetup">
+      <img src="/subpagesforprojects/breath/breathimage.png"
+           alt="circles">
+           <span> A user is following the breathpattern. The breath of the user is shown with a line. The pattern to follow is made of circles. </span>
       </div>
 
       <div class="imagesetup">
-        <img src="/images/Breath.jpg" alt ="image">
-        </div>
+      <img src="/subpagesforprojects/breath/brathhistory.png"
+           alt="circles">
+           <span> The breath-history is shown when completing the three "levels". </span>
+      </div>
 
-      <p>While modern life is full of job, family, academic and interpersonal
-        responsibilities, “Take the Money and Run” is a game that allows anyone to
-        live out their dreams of dropping our of the rat-race and traveling the world
-         (in a safe and much less expensive
-        way). Inspired in equal parts by Oregon Trail, Tamagotchi, and the oppressive
-         noise of the New York City Subway, this game attempts to do very little in a
-          fun way. This was a collaboration with Simon Marqvard. Technologies used:
-          Mappa is a Javascript
-        framework which wraps the functionality of several different mapping APIs
-        together. It was used to generate maps and the coordinate positions for map
-        overlays. The underlying map provider we used was the open-source Leaflet.js.
-         P5.js provided most
-        of the visual UX/UI elements of the project, including generating short
-         humorous ‘postcards’ for the players with data pulled from various sources,
-          including Flickr’s API, Node.js in conjunction with socket.io controlled
-          our back-end elements, including
-        our interface with our Firebase database, which housed player data and
-        allowed the program to run from Heroku.</p>
+    <p> The case was 3d printed from a sketch found on <a href="https://learn.adafruit.com/3d-printed-case-for-adafruit-feather/parts">adafruit</a>
+      specifically made to fit the adafruit feather and a small battery. The entire circuit was put together on
+      the featherboard to limit the size as much as possible.
+    </p>
+
+      <div class="imagesetup">
+      <img src="/subpagesforprojects/breath/3d.JPG" alt="circles">
+      <span> The 3d printed case containing the featherboard and the circuit including bluetooth, batteri, on/off switch and wireless Polar® HeartRate sensor </span>
+      </div>
+
+      <div class="blogcolumn">
+          <div class="aroundSketch">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jvqkezLwuBs?rel=0&amp;controls=0&amp;showinfo=0&amp;ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <span> User test and minor adjustments before the 2017 winter show at ITP </span>
+      </div>
+      </div>
+
+
+    <p> This project was exhibited at the ITP winter show 2017. The code can be found here.
+
+
 </div>

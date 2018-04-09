@@ -18,6 +18,11 @@ html, body {
   display: flex;
 }
 
+.aroundSketch span {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
 
  /* NAVIGATION BLOCK */
 
@@ -136,6 +141,21 @@ html, body {
   font-size: 11px;
 }
 
+.aroundSketch {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+#defaultCanvas0{
+  width: 100%;
+}
+
 
 /* ADJUSTMENTS FOR SMALL SCREEN */
 
@@ -164,6 +184,11 @@ html, body {
     display: unset;
     margin-left: -15px;
   }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -176,12 +201,16 @@ html, body {
 }
 
 
-
 @media only screen and (max-width: 700px) {
     .imagesetup >* {
       flex: 0 0 100%;
       min-width: 300px;
       background-color: white;
       margin: 0px auto;
+    }
+
+    iframe {
+      width: 100% !important;
+      height: auto !important;
     }
 }

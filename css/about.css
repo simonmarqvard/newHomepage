@@ -18,6 +18,20 @@ html, body {
   display: flex;
 }
 
+.aroundabout {
+  font-size: 18px;
+  margin: 100px auto;
+  letter-spacing: 0.03em;
+}
+
+.aroundabout a {
+  text-decoration: none;
+  color: blue;
+}
+
+.aroundabout span {
+  font-size: 24px;
+}
 
  /* NAVIGATION BLOCK */
 
