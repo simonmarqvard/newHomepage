@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+	<title>blogpage</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="/"><strong>Home</strong></a></li>
+    <li><a href="/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="/"><strong>Home</strong></a></li>
+        <li><a href="/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> API of you - Glucoseproject </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by Simon M. Jensen</span>
+    <span> - April 18, 2018</span>
+  </div>
+
+
+
+        <p>For the midterm in “API of you” we had to collect a dataset based on ourselves. From
+the data we had to create a .json file that would display our collected information
+in an interesting way.</p>
+
+<p>I decided to base my project on blood glucose. Blood glucose has been a central topic
+many times during my time in biology, however I have never had the opportunity
+to continuously test my own. Especially, since coming to ITP - I haven’t really been able to keep
+up with my exercise, sleeping and eating habits. This may have had an impact on my daily blood glucose
+making it an interesting test in a project that had to be about ourselves.</p>
+
+<p>I bought a glucose-testing-kit on amazon. The idea was to test my blood glucose 4 times
+each day. I looked up information on blood glucose and found that especially these times would
+be critical to get an accurate estimation of blood glucose levels:</p>
+<ul>
+  <li>morning.</li>
+  <li>before my lunch meal.</li>
+  <li>two hours after my lunch meal.</li>
+  <li>before going to bed.</li>
+</ul>
+
+<p>The idea with these measurements would be to compare them to each other as well as the recommended guidelines
+for blood glucose as defined on various online-pages.
+This is what my inital idea for the project looked like.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-04-18/glucoseinitial.png" alt="circles" />
+</div>
+
+<p>On this sketch, the four measurements are displayed with white bars, whereas the recommended
+guidelines are displayed beneath for comparison.</p>
+
+<p>It took some attempts to organize my .json file correctly. Not only did I note down my measurements each day, but
+also the amount of sleep, what times I ate, date, stresslevels and lunch ingredients were recorded. The blood glucose measurements and the corresponding times were my main data. In order to make them comparable and make the site dynamic I
+placed these results in an array for itself. This would make it possible to loop through the “measurements” and display
+“timeslots” based on the arraylength. The structure is displayed in the following image.<br />
+<br /></p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-04-18/json.png" alt="circles" />
+</div>
+
+<p>When building the structure of my page I wanted it to be dynamic so that when more days were added to
+the datafile - the days would automatically get added to the page. When searching through charts to display my results
+I was inspired by an image containing a lot of circle charts - and decided that I wanted to do something similar. First,
+I set up the structure of my layout using css and html.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-04-18/structure1.png" alt="circles" />
+</div>
+
+<p>When this was setup I had to incorporate my charts donut charts that I found on the chart.js site into each box. This
+took some adjusting. When all charts were in place I had Sam Slover provide me some inputs regarding the design of the page:
+how to best display the measurements and compare to the guidelines. He suggested that I made multi-donut charts to make the
+results easier to understand.</p>
+
+<p>The final result can be seen here: <a href="https://simonmarqvard.github.io/glucoseproject/">DISPLAY</a>
+<br />
+The code can be found here: <a href="https://github.com/simonmarqvard/glucoseproject">CODE</a></p>
+
+<p>Future thoughts:
+For the final my plan is to develop this page further. As we are currently learning about databases I am considering
+hooking the page up to a data base. That way you can enter your daily data, and it will automatically display on the screen.</p>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

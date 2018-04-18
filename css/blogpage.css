@@ -46,7 +46,7 @@ html, body {
 
  .navColumn li {
    list-style: none;
-   margin: 50px 20px;
+   margin: 30px 20px;
  }
 
  .navColumn ul {
@@ -152,6 +152,7 @@ color: brown;
 .blogImage {
   background-position: center;
   background-size: cover;
+  margin-top: 10px;
   width: 100%;
   height: 120px;
 }
