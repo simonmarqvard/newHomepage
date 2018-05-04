@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+	<title>blogpage</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="/"><strong>Home</strong></a></li>
+    <li><a href="/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="/"><strong>Home</strong></a></li>
+        <li><a href="/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Glucoseproject - Final </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by Simon M. Jensen</span>
+    <span> - May 03, 2018</span>
+  </div>
+
+
+
+        <p>I decided to keep working on my midterm project: visualizing
+and comparing daily blood glucose measurements to recommended guidelines. One of the things I wanted to add to the existing project was a database and provide forms for users to input and update data in a simple way.</p>
+
+<p><strong> The final assignment was presented as follows: </strong> <br />
+<em>Choose a dataset that you want to better understand and bring to life (it could be your own or data from a community around you). Using your Node/Mongo/Express application (or another dataset that you’ve collected), track that dataset over the course of at least 5-7 days. Your final project will be to design a digital or physical interface that brings your data to life in a way that you find personally meaningful. </em></p>
+
+<p>I had most of the frontend design down. For that reason most of my work for this final would be backend code - setting up a form to enter information to a database. To set it up, I followed our in-class-boilerplate example. This would set up a git-repository, create a Heroku app and attach MongoDB to the app. The information for doing so can be found <a href="https://github.com/simonmarqvard/APIofYouDatabase">here</a>.</p>
+
+<p>I had previously used a local json file to create my sketch. My code would loop through the days in the json file and place a new “day-card” for each of them. In a similar way, the sketch would loop through the number of glucose measurements each day and dynamically add charts for each measurement each day. For this reason it was important that the new data structure would mimic the one I had previously used in my local-file. Being thoughtful about this would allow me to reuse my previous javaScript code.</p>
+
+<p><strong> Old json structure: </strong></p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-05-03/json1.png" alt="circles" />
+</div>
+
+<p><strong> New database structure: </strong></p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-05-03/newstructure.png" alt="circles" />
+     <span> <em> The new structure is a little more sparse on information, but down the
+     line I would like to implement more information similar to my initial data-collection. </em> </span>
+</div>
+
+<p><br /></p>
+
+<p>Making sure that the json files had a similar structure made the transition from
+a local file to a database really simple.</p>
+
+<p>The next thing I did was to create a form where the user could input measurements.
+This was done in css - adding a small box to the corner of the screen which could expand and
+minimize when clicking</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nx">controlPanel</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">///////////// OPEN AND CLOSE CONTROLPANEL /////////////////</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">open</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".inputBox"</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+      <span class="na">height</span><span class="p">:</span> <span class="s2">"800px"</span><span class="p">,</span>
+      <span class="na">width</span><span class="p">:</span> <span class="s2">"400px"</span><span class="p">,</span>
+      <span class="na">marginTop</span><span class="p">:</span> <span class="s2">"3%"</span><span class="p">,</span>
+      <span class="na">marginLeft</span><span class="p">:</span> <span class="s2">"40%"</span><span class="p">,</span>
+    <span class="p">},</span> <span class="mi">800</span><span class="p">)</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".menu"</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+      <span class="na">width</span><span class="p">:</span> <span class="s2">"400px"</span>
+    <span class="p">},</span> <span class="mi">800</span><span class="p">)</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".buttonSubmit"</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+      <span class="na">width</span><span class="p">:</span> <span class="s2">"400px"</span>
+    <span class="p">},</span> <span class="mi">800</span><span class="p">)</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".menu"</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">"CLOSE"</span><span class="p">)</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".glucoseSchema"</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">"visibility"</span><span class="p">,</span> <span class="s2">"visible"</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".inputBox"</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+      <span class="na">height</span><span class="p">:</span> <span class="s2">"50px"</span><span class="p">,</span>
+      <span class="na">width</span><span class="p">:</span> <span class="s2">"100px"</span><span class="p">,</span>
+      <span class="na">marginTop</span><span class="p">:</span> <span class="s2">"0px"</span><span class="p">,</span>
+      <span class="na">marginLeft</span><span class="p">:</span> <span class="s2">"0px"</span>
+
+    <span class="p">},</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".glucoseSchema"</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">"visibility"</span><span class="p">,</span> <span class="s2">"hidden"</span><span class="p">)</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".menu"</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+      <span class="na">width</span><span class="p">:</span> <span class="s2">"100"</span>
+    <span class="p">},</span> <span class="mi">500</span><span class="p">)</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".menu"</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">"OPEN"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">//////////////////////////////////////////////////////</span>
+
+<span class="c1">//INPUT FOR FORM</span>
+  <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"formToSend"</span> <span class="o">&gt;</span>
+
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"name"</span><span class="o">&gt;</span><span class="nx">Name</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Name"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"enter name"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span> <span class="s2">"Name"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-time"</span><span class="o">&gt;</span> <span class="nx">Morning</span> <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"time1"</span><span class="o">&gt;</span><span class="nx">Time</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure1Time"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Time hh:mm"</span>
+         <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure1Time"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"val1"</span><span class="o">&gt;</span><span class="nx">Value</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure1Value"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Value"</span>
+         <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure1Value"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-time"</span><span class="o">&gt;</span> <span class="nx">Lunch</span><span class="p">:</span> <span class="nx">Before</span> <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"time2"</span><span class="o">&gt;</span><span class="nx">Time</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure2Time"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter time"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure2Time"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"val2"</span><span class="o">&gt;</span><span class="nx">Value</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure2Value"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Value"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure2Value"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-time"</span><span class="o">&gt;</span> <span class="nx">Lunch</span><span class="p">:</span> <span class="nx">After</span> <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"time3"</span><span class="o">&gt;</span><span class="nx">Time</span> <span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure3Time"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Time"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure3Time"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"val3"</span><span class="o">&gt;</span><span class="nx">Value</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure3Value"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Value"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure3Value"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-time"</span><span class="o">&gt;</span> <span class="nx">Bedtime</span> <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"color"</span><span class="o">&gt;</span><span class="nx">Time</span> <span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure4Time"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Time"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure4Time"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"form-group"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">"color"</span><span class="o">&gt;</span><span class="nx">Value</span><span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">name</span><span class="o">=</span><span class="s2">"Measure4Value"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Enter Value"</span>
+        <span class="kd">class</span><span class="o">=</span><span class="s2">"form-control"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"Measure4Value"</span> <span class="nx">required</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+
+      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"buttonSubmit"</span><span class="o">&gt;</span><span class="nx">Submit</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/form</span><span class="err">&gt;
+</span>
+
+  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+</code></pre></div></div>
+
+<p>This is what the form looked like:</p>
+
+<div class="aroundImage">
+<img src="https://thumbs.gfycat.com/SpanishZealousAfricangoldencat-size_restricted.gif" alt="circles" />
+</div>
+
+<p><strong> Displaying information from Database step 1. </strong> <br />
+Using a form I would send information to my database (The stored information can be seen using the route
+  /showDBdata). Another route would render a html file with a script making an $.ajax “get” request to retrieve the stored data and create the visualization that is seen (/DisplayData -&gt; showGlucose.html -&gt; script.js -&gt; $.ajax get).</p>
+
+<p>This worked really well and the information that I entered displayed on my page successfully. What I later realized though, was that my page would have to reload every time I made a new submit/get request.</p>
+
+<p><strong> Displaying information from Database step 2. </strong> <br />
+To avoid the reload, I changed my $.get request to a post request. Now when submitting the information from my form I would save the information to my dataBase and display it right away, preventing the default behavior using the e.preventDefault() function.</p>
+
+<p>This is what the final project looked like when presenting:</p>
+
+<div class="aroundImage">
+<img src="https://thumbs.gfycat.com/OpenCircularAndalusianhorse-size_restricted.gif" alt="circles" />
+</div>
+
+<p><strong> Future additions. </strong> <br />
+Down the line I would like to add a login to the site. I have never attempted user authentication and figured
+it would be interesting to explore. Also - turning this into a chrome extension is something I would like to play around with.</p>
+
+<p>More information about the sketch can be read on my first midterm post <a href="/2018/04/18/API-of-you.html">here</a>. <br />
+The code from this example can be found on github <a href="https://github.com/simonmarqvard/APIofYouDatabase">here</a>.</p>
+
+<p><br />
+<br /></p>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

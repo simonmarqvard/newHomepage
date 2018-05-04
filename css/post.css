@@ -334,6 +334,7 @@ margin-bottom: 15px;
     iframe {
       width: 100% !important;
       height: auto !important;
+      overflow: hidden;
     }
 
     .blogcolumn {
