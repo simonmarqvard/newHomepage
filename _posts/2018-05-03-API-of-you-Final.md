@@ -162,7 +162,7 @@ function controlPanel() {
 This is what the form looked like:
 
 <div class="aroundImage">
-<img src="https://thumbs.gfycat.com/SpanishZealousAfricangoldencat-size_restricted.gif"
+<img src="/blog_assets/2018-05-03/GlucoseBig.gif"
      alt="circles">
 </div>
 

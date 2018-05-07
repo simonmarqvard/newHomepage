@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Finding Trends - Final
-postHero: https://thumbs.gfycat.com/YearlyAmusedHind-size_restricted.gif
+title: Discovering Trends - Final
+postHero: /blog_assets/2018-04-27/Trendsgif.gif
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
@@ -245,7 +245,7 @@ This is what the final result looked like:
 
 
 <div class="aroundImage">
-<img src = "https://thumbs.gfycat.com/YearlyAmusedHind-size_restricted.gif"
+<img src = "/blog_assets/2018-04-27/Trendsgif.gif"
      alt="circles">
      <span> Trends searched locally and globally </span>
 </div>
