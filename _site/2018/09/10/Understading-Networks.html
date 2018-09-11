@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<title>blogpage</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="/"><strong>Home</strong></a></li>
+    <li><a href="/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="/"><strong>Home</strong></a></li>
+        <li><a href="/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Understanding Networks - Ball Socket game </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by Simon M. Jensen</span>
+    <span> - September 10, 2018</span>
+  </div>
+
+
+
+        <p>In the first class of understanding networks we were introduced to different network
+dynamics. We learned how computers connect to routers and what IP addresses are.
+We were introduced to centralized networks, distributed networks and investigated
+several real life networks - roadmaps, flightmaps, energy - and oilgrids, and their
+structure. Also we were introduced to the (OSI) Open systems Interconnection Reference Model.</p>
+
+<p>This weeks assignment “Socket Game” was intended to introduce us to sockets and wifi communication.
+We were asked to design and build a device that could connect to a server using a TCP socket connection to
+play a game.</p>
+
+<p>The game is further described <a href="http://tigoe.github.io/BallDropGame/">here</a>. It was optional whether we
+wanted to use the Arduino Uno and the Wifi101 shield, Arduino MKR1000, Ethernet Shields or a Raspberry Pi for this assignment. I chose to go with the Arduino MKR1000 since it seemed to be the most obvious choice for this assignment. I could be wrong though - and as I later found out the MKR1000 did leave me with some frustration as I will return to later.</p>
+
+<p>My experience with Arduino is very much based on our learnings from Physical Computing. Since it’s been a while I decided to start with the very basics in this assignment - setting up some buttons and getting a digital read. Supported by examples and code from Tom Igoe I quickly became more comfortable with it again. although a bit rusty.</p>
+
+<p>For the control of the game I used two buttons - one going to the left, one going to the right and then a potentiometer to control up and down. The potentiometer was coded with a big neutral zone where nothing would happen, whereas high and low reads would control the pad to go up and down. Aside from that a button was used to connect/disconnect to the game.</p>
+
+<p>The early state:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-09-10/IMG_0800.JPG" alt="circles" />
+</div>
+
+<p>Up until this point everything had been going fairly well. The different buttons would print (Serial.print) “l”, “r”, “d” and “u” to my Serial Monitor when pressing the various buttons. As a first step I decided to test the control using the command line interface from my computer. This was done through a pipe connecting the information from my controller to the IP address of the game.
+<br />
+<br />
+<em><strong> $ cat /dev/cu/usbmodem1421 | nc 172.22.151.125 8080 </strong></em>
+<br />
+<br />
+This would allow me to test my controls and make a few adjustements to buttons where necessary.</p>
+
+<p>The next step was to take advantage of the wifi board passing information directly to the IP address without using the command line. This turned out to more complicated than expected. Connecting to itpsandbox and the right server was no problem, but whenever I was trying to connect to the game - nothing would happen.
+After several hours of frustration I decided to test the MKR1000 board - I isolated the <em> client.connect(server, 8080) </em> in the loop expecting my paddle to connect to the game right away, without pressing any buttons, only to realize the the board didn’t work. This turned out to be the case with 5-6 other boards, until I found one that would connect me to the game.
+<br />
+With my controller connecting to the game a could attach a red LED indicating my connection to the wifi and a green LED indicating my connection to the game.</p>
+
+<p>This is what my final board looked like:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-09-10/IMG_0807.JPG" alt="circles" />
+</div>
+
+<p><br />
+From a design-perspective it is not a beauty. However I do feel like the functionality of the board is good - especially the lights provide a great feedback, indicating whether you are connected to the wifi and/or the game.</p>
+
+<p>Testing the final board:
+<br /></p>
+<div class="aroundSketch">
+<iframe src="https://www.youtube.com/embed/K4MRjXRnJDo" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
+<p><br /></p>
+
+<p>It seemed my controller was working through the Wifi-shield. However it confused me that I couldn’t get the controller to work when powering it from a power plug in the wall. The best reason I can come up with is that when I upload the code using my computer and press Serial monitor it executes the script on the Arduino - connecting to the wifi. However when powering from the power plug I have no button to execute the code connecting to the wifi? I tried attaching another button to press for wifi connection - with no luck though - is that the right way to do it? If this doesn’t make sense I’ll ask during class. Along with a few other things.</p>
+
+<p>Arduino code:</p>
+
+<div>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;SPI.h&gt;
+#include &lt;WiFi101.h&gt;
+</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="n">ssid</span><span class="p">[]</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>       <span class="c1">//  your network SSID (name)</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="n">pass</span><span class="p">[]</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>   <span class="c1">// your network password</span>
+
+<span class="n">WiFiClient</span> <span class="n">client</span><span class="p">;</span>                <span class="c1">// instance of the WIFi client library</span>
+<span class="kt">int</span> <span class="n">status</span> <span class="o">=</span> <span class="n">WL_IDLE_STATUS</span><span class="p">;</span>      <span class="c1">// WiFi status</span>
+<span class="n">IPAddress</span> <span class="n">server</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="mi">122</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">155</span><span class="p">);</span>       <span class="c1">// address of the server</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">wifiConnectedLED</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">serverConnectLED</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">connectButton</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>      <span class="c1">// the pushbutton for connecting/disconnecting</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">connectionLED</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>      <span class="c1">// this LED indicates whether you're connected</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">sendInterval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>     <span class="c1">// minimum time between messages to the server</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">debounceInterval</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>  <span class="c1">// used to smooth out pushbutton readings</span>
+<span class="kt">int</span> <span class="n">prevButtonState</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>          <span class="c1">// previous state of the pushbutton</span>
+<span class="kt">long</span> <span class="n">lastTimeSent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>            <span class="c1">// timestamp of the last server message</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">//Initialize serial and wait for port to open:</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="c1">// initialize digital inputs and outputs:</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">wifiConnectedLED</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">serverConnectLED</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">connectionLED</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">serverConnectLED</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">connectButton</span><span class="p">,</span> <span class="n">INPUT_PULLUP</span><span class="p">);</span>
+  <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">);</span> <span class="c1">// wait for serial port to connect.</span>
+
+  <span class="c1">// attempt to connect to Wifi network:</span>
+  <span class="k">while</span> <span class="p">(</span> <span class="n">status</span> <span class="o">!=</span> <span class="n">WL_CONNECTED</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Attempting to connect to SSID: "</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">ssid</span><span class="p">);</span>     <span class="c1">// Connect to WPA/WPA2 network:</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="n">WiFi</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">pass</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">wifiConnectedLED</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+    <span class="c1">// wait 3 seconds for connection:</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// you're connected now, so print out the status:</span>
+  <span class="n">printWifiStatus</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="c1">// message to send to the server:</span>
+  <span class="kt">char</span> <span class="n">message</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// note the current time in milliseconds:</span>
+  <span class="kt">long</span> <span class="n">now</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+  <span class="c1">// check to see if the pushbutton's pressed:</span>
+  <span class="n">boolean</span> <span class="n">buttonPushed</span> <span class="o">=</span> <span class="n">buttonRead</span><span class="p">(</span><span class="n">connectButton</span><span class="p">);</span>
+
+
+  <span class="c1">// if the button's just pressed:</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buttonPushed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// if the client's connected, disconnect:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">connected</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"disconnecting"</span><span class="p">);</span>
+      <span class="n">client</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"x"</span><span class="p">);</span>
+      <span class="n">client</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+    <span class="p">}</span> <span class="c1">// if the client's disconnected, try to connect:</span>
+    <span class="k">else</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"connecting"</span><span class="p">);</span>
+      <span class="n">client</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">server</span><span class="p">,</span> <span class="mi">8080</span><span class="p">);</span>
+      <span class="n">client</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"n=SimonJensen</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+
+<span class="c1">//   client.connect(server, 8080);</span>
+
+<span class="c1">//  // read the joystick:</span>
+  <span class="c1">//could have been a digital read instead because these are buttons</span>
+  <span class="kt">int</span> <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A1</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">sensorValue2</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A2</span><span class="p">);</span>
+  <span class="c1">//must be analog</span>
+  <span class="kt">int</span> <span class="n">sensorValue3</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A6</span><span class="p">);</span>
+
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">sensorValue</span> <span class="o">==</span> <span class="mi">1023</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"l"</span><span class="p">);</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"l"</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">sensorValue2</span> <span class="o">==</span> <span class="mi">1023</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"r"</span><span class="p">);</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"r"</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">sensorValue3</span> <span class="o">&gt;</span> <span class="mi">950</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"u"</span><span class="p">);</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"u"</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sensorValue3</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"d"</span><span class="p">);</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"d"</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">connected</span><span class="p">()</span>                     <span class="c1">// if the client's connected</span>
+      <span class="o">&amp;&amp;</span> <span class="n">now</span> <span class="o">-</span> <span class="n">lastTimeSent</span> <span class="o">&gt;</span> <span class="n">sendInterval</span>   <span class="c1">// and the send interval has elapased</span>
+      <span class="o">&amp;&amp;</span> <span class="n">message</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>                     <span class="c1">// and there's a message to send</span>
+<span class="c1">//    client.print(message);                   // send a message</span>
+<span class="c1">//    Serial.print(message);</span>
+    <span class="c1">//save this moment as last time you sent a message:</span>
+    <span class="n">lastTimeSent</span> <span class="o">=</span> <span class="n">now</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// set the connection LED based on the connection state:</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">serverConnectLED</span><span class="p">,</span> <span class="n">client</span><span class="p">.</span><span class="n">connected</span><span class="p">());</span>
+
+  <span class="c1">// if there's incoming data from the client, print it serially:</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// this method reads the button to see if it's just changed</span>
+<span class="c1">// from high to low, and debounces the button:</span>
+<span class="n">boolean</span> <span class="nf">buttonRead</span><span class="p">(</span><span class="kt">int</span> <span class="n">thisButton</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">boolean</span> <span class="n">result</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">currentState</span> <span class="o">=</span> <span class="n">digitalRead</span><span class="p">(</span><span class="n">thisButton</span><span class="p">);</span> <span class="c1">// current button state</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">currentState</span> <span class="o">!=</span> <span class="n">prevButtonState</span>         <span class="c1">// if the button's changed</span>
+      <span class="o">&amp;&amp;</span> <span class="n">currentState</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span> <span class="p">{</span>               <span class="c1">// and it's low</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>                            <span class="c1">// result is true</span>
+  <span class="p">}</span>
+
+  <span class="n">delay</span><span class="p">(</span><span class="n">debounceInterval</span><span class="p">);</span>                    <span class="c1">// debounce delay</span>
+  <span class="n">prevButtonState</span> <span class="o">=</span> <span class="n">currentState</span><span class="p">;</span>             <span class="c1">// save the button state for next time</span>
+  <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">printWifiStatus</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// print the SSID of the network you're attached to:</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"SSID: "</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">WiFi</span><span class="p">.</span><span class="n">SSID</span><span class="p">());</span>
+
+  <span class="c1">// print your WiFi shield's IP address:</span>
+  <span class="n">IPAddress</span> <span class="n">ip</span> <span class="o">=</span> <span class="n">WiFi</span><span class="p">.</span><span class="n">localIP</span><span class="p">();</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"IP Address: "</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">ip</span><span class="p">);</span>
+
+  <span class="c1">// print the received signal strength:</span>
+  <span class="kt">long</span> <span class="n">rssi</span> <span class="o">=</span> <span class="n">WiFi</span><span class="p">.</span><span class="n">RSSI</span><span class="p">();</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"signal strength (RSSI):"</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">rssi</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" dBm"</span><span class="p">);</span>
+  <span class="c1">// When you connect to wifi turn on light</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">wifiConnectedLED</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+</div>
+
+<p><br />
+<br />
+<br /></p>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

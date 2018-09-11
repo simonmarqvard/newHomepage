@@ -54,8 +54,49 @@
 <div class="imagesetup">
 <img src="/projects/Trends/Trendsgif1.gif"
      alt="circles">
-     <span> The breath-history is shown when completing the three "levels". </span>
+     <span> Use the globe to select a country, then type in a search word to see if it has been trending. Or make
+     a global search and the countries will light up based on the popularity of the word </span>
 </div>
+
+This project was created for the <em>"API - mashups" </em> class at ITP. The assignment was to create a single
+page web experience that uses data from a public API and incorporates the use of at least one
+Javascript "interaction" library.
+
+<br>
+<br>
+
+For this project I used the <a href="https://www.npmjs.com/package/google-trends-api">google trends API</a>. This API allows you to see the google searches that are trending
+in different countries. The API has been collecting data since 2004 giving you the option to choose a
+startDate and endDate if you are interested in a certain time period. Also, another function provides
+global information displaying the countries in which your searchword was more popular. <br><br>
+
+<div class="imagesetup">
+<img src="/projects/Trends/TrendsOlym.png"
+     alt="circles">
+     <span> Searching the word: "Olympics" in Brazil returns a trend in August 2016, which is when the olympics were held </span>
+</div>
+
+
+The google trends library is only available through <a href="https://nodejs.org/en/">Node.js</a> - so for this project to work I had to set up
+a server. I did that using <a href="https://www.digitalocean.com/">Digitalocean</a>, creating a cloud server (droplet) from which I could serve my content.
+I used <a href="https://fetchsoftworks.com/fetch/">Fetch </a> for file transfer to the server.
+<br>
+<br>
+
+The Globe was created using D3.js based on an <a href="https://github.com/d3/d3-geo/blob/master/README.md#geoPath">example </a>from Mike Bostock. The data is visualized using
+<a href="https://www.chartjs.org/">Chart.js</a> and user interaction inputs/buttons were made using jQuery.
+
+<br>
+<br>
+
+More information about the project can be found in my blogpost <a href="/2018/04/27/Mashup-final.html">here</a>
+<br>
+The code used in the project can be found <a href="https://github.com/simonmarqvard/GoogleTrendsD3Sketch">here</a>
+
+
+
+
+
 
 
 </div>
