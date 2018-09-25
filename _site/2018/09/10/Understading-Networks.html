@@ -75,9 +75,9 @@ We were asked to design and build a device that could connect to a server using 
 play a game.</p>
 
 <p>The game is further described <a href="http://tigoe.github.io/BallDropGame/">here</a>. It was optional whether we
-wanted to use the Arduino Uno and the Wifi101 shield, Arduino MKR1000, Ethernet Shields or a Raspberry Pi for this assignment. I chose to go with the Arduino MKR1000 since it seemed to be the most obvious choice for this assignment. I could be wrong though - and as I later found out the MKR1000 did leave me with some frustration as I will return to later.</p>
+wanted to use the Arduino Uno and the Wifi101 shield, Arduino MKR1000, Ethernet Shields or a Raspberry Pi for this assignment. I chose to go with the Arduino MKR1000 since it seemed to be the most obvious choice for this assignment. I could be wrong though - and as I later found out the MKR1000 did leave me with some frustration as I will return to.</p>
 
-<p>My experience with Arduino is very much based on our learnings from Physical Computing. Since it’s been a while I decided to start with the very basics in this assignment - setting up some buttons and getting a digital read. Supported by examples and code from Tom Igoe I quickly became more comfortable with it again. although a bit rusty.</p>
+<p>My experience with Arduino is very much based on our learnings from Physical Computing. Since it’s been a while I decided to start with the very basics in this assignment - setting up some buttons and getting a digital read. Supported by examples and code from Tom Igoe I quickly became more comfortable with it again. Although a bit rusty.</p>
 
 <p>For the control of the game I used two buttons - one going to the left, one going to the right and then a potentiometer to control up and down. The potentiometer was coded with a big neutral zone where nothing would happen, whereas high and low reads would control the pad to go up and down. Aside from that a button was used to connect/disconnect to the game.</p>
 
@@ -86,16 +86,16 @@ wanted to use the Arduino Uno and the Wifi101 shield, Arduino MKR1000, Ethernet 
 <img src="/blog_assets/2018-09-10/IMG_0800.JPG" alt="circles" />
 </div>
 
-<p>Up until this point everything had been going fairly well. The different buttons would print (Serial.print) “l”, “r”, “d” and “u” to my Serial Monitor when pressing the various buttons. As a first step I decided to test the control using the command line interface from my computer. This was done through a pipe connecting the information from my controller to the IP address of the game.
+<p>Up until this point everything had been going fairly well. The different buttons would print (Serial.print) “l”, “r”, “d” and “u” to my Serial Monitor when pressing them. As a first step I decided to test the control using the command line interface from my computer. This was done through a pipe connecting the information from my controller to the IP address of the game.
 <br />
 <br />
 <em><strong> $ cat /dev/cu/usbmodem1421 | nc 172.22.151.125 8080 </strong></em>
 <br />
 <br />
-This would allow me to test my controls and make a few adjustements to buttons where necessary.</p>
+This would allow me to test my controls and make a few adjustments to buttons where necessary.</p>
 
-<p>The next step was to take advantage of the wifi board passing information directly to the IP address without using the command line. This turned out to more complicated than expected. Connecting to itpsandbox and the right server was no problem, but whenever I was trying to connect to the game - nothing would happen.
-After several hours of frustration I decided to test the MKR1000 board - I isolated the <em> client.connect(server, 8080) </em> in the loop expecting my paddle to connect to the game right away, without pressing any buttons, only to realize the the board didn’t work. This turned out to be the case with 5-6 other boards, until I found one that would connect me to the game.
+<p>The next step was to take advantage of the wifi board passing information directly to the IP address without using the command line. This turned out to more complicated than expected. Connecting to itpsandbox was no problem, but whenever I was trying to connect to the game - nothing would happen.
+After several hours of frustration I decided to test the MKR1000 board - I isolated the <em> client.connect(server, 8080) </em> in the loop expecting my paddle to instantly connect to the game, without pressing any buttons, only to realize the the board didn’t work. This turned out to be the case with 5-6 other boards, until I found one that would give me what I was hoping for.
 <br />
 With my controller connecting to the game a could attach a red LED indicating my connection to the wifi and a green LED indicating my connection to the game.</p>
 
@@ -105,7 +105,7 @@ With my controller connecting to the game a could attach a red LED indicating my
 </div>
 
 <p><br />
-From a design-perspective it is not a beauty. However I do feel like the functionality of the board is good - especially the lights provide a great feedback, indicating whether you are connected to the wifi and/or the game.</p>
+From a design-perspective it is not a beauty. However I do feel like the functionality of the board is good - especially the lights provide a great feedback, indicating whether you are connected to the wifi and/or the game. In general, this was a great assignment to get back into Arduino code.</p>
 
 <p>Testing the final board:
 <br /></p>
