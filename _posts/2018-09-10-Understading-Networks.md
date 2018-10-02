@@ -70,5 +70,19 @@ Arduino code:
 </div>
 
 <br>
+
+_ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * _
+<br>
+<br>
+Update:
+
+To answer my question of not having the controller connect to wifi without having the serial monitor. I found that this problem was simply due to one line of code:
+
+<code>while (!Serial); // wait for serial port to connect.</code>
+
+This line serves a "debug" line. It means that it waits for an active serial connection to be established by the PC (i.e., for the serial port to be opened by a piece of software).
+By removing that - the controller would activate immediately when connected to power.
+
+<br>
 <br>
 <br>

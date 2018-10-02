@@ -53,7 +53,7 @@
   </div>
 </div>
         <!-- <h1> BLOGPAGE <h1> -->
-<h2> LiveWeb - self portrait </h2>
+<h2> LiveWeb - Self-portrait with video </h2>
 
 
   <div class="blogpost-header">
@@ -64,11 +64,41 @@
 
 
 
-        <p>Quick upload of homework assignment - full blog will be uploaded later today.</p>
+        <p>The first assignment in this class was to make a self-portrait using video and some form of user interaction. Aside from this the assignment was open to interpretation - and we could portray ourselves in whatever way we wanted.</p>
 
-<div class="aroundSketch">
-<iframe src="https://www.youtube.com/embed/Y1b8KCqkpC4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<p>My initial idea was to bring in a large amount of videos. I would arrange them in a brain shape, having the four major brain lobes: Frontal, Parietal (sensory), Occiptal (visual) and Temporal (memory). I would then place videos according to the themes - and my interest - in the different lobes.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-09-11/1-brain.jpg" alt="circles" />
 </div>
+
+<p>Attempting to create a brain-shaped object turned out to be quite a showoff in playing around with flexbox rows and columns in CSS. I wanted all the videos to be different sizes and shapes. The following image shows what the object looked like with background- and border colors enabled to help me navigate and adjusting the different divs and nested flexboxes.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-09-11/lines.png" alt="circles" />
+</div>
+
+<p>I realized that no-one would ever associate my shape with a brain - and decided to put a transparent brain-layer on top of my boxes to make my intentions more clear. With some adjustments and some flex-shrink properties the “brain” and its “lobes” was finally coming together.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-09-11/brainwithlayer.png" alt="circles" />
+</div>
+
+<p>I then added a lot of youtube videos with topics that I frequently watch. Initially I would put certain videos in the lobe where they would belong - such as things I watch in the visual lobe, things related to movement in the motorcortex part etc. Eventually I realized this would take forever and I started adding the videos in a random order.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-09-11/videos.png" alt="circles" />
+</div>
+
+<p>I wanted to have the videos autoplaying and muted - the interaction would be buttons that would unmute the videos creating a sound chaos. This turned out to be much more complicated than I expected. Since the videos are embedded from youtube as &lt;iframe&gt; there is very little you can do to manipulate the videos without implementing it in the url. Eventually, I found a way by downloading a youtube-player-api. This would allow me to play and pause the videos - without referring to it in the url.</p>
+
+<p>I created 34 buttons - one for each video - as a string and added it to the innerHTML of a div. When pressing the buttons the related video would start playing creating a sound chaos when enough videos are played at the same time. The noise- image- chaos is a reference to the way your brain functions during a semester at ITP.</p>
+
+<p>The sketch can be seen <a href="https://simonmarqvard.github.io/Live-web-self-portrait/">here</a>. Allow some time for the sketch to load - due to the many videos.</p>
+
+<p><br />
+<br />
+<br /></p>
 
 
     
