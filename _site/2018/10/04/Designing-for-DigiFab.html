@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<title>blogpage</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="/"><strong>Home</strong></a></li>
+    <li><a href="/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="/"><strong>Home</strong></a></li>
+        <li><a href="/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Designing for Digital fabrication - Project Proposal </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by Simon M. Jensen</span>
+    <span> - October 04, 2018</span>
+  </div>
+
+
+
+        <p>For this project I would like to convert a painting into a mosaic piece. Using a “tile” sketch and a “color/contour” sketch made in processing my idea is to import it into Vectorworks and laser-etch tile instructions to a surface - to which I will add glass mosaic.</p>
+
+<p>This project is inspired by Carl Henning Pedersen, a danish modern artist, who did a lot of mosaic pieces in Denmark in the 80’s.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/CHP.png" alt="circles" />
+</div>
+
+<p>My idea is to take an already existing painting and turn it into a grid/tiles using processing. Each tile in the grid will use a letter for the color. Ex. r = red, g = green, b=blue, since colors don’t get transferred into vectorWorks, the letter will indicate the color of the specific tile.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/tileImage.png" alt="circles" />
+</div>
+
+<p>Printing this into a surface would indicate where to place the tiles and also which color to use.
+To avoid a monotonous expression of all tiles being placed in the similar grid-like structure, my idea was to select certain colors from an image, red, blue or green and get the contour of the color. It could look something like the following.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/red.png" alt="circles" />
+</div>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/blue.png" alt="circles" />
+</div>
+
+<p>In the first image red has been selected and isolated - in the other it is green/blue.
+When the colors are selected they can be run through the contour processing sketch that we were provided in-class last week. Here is an example of the “dark” colors before and after going through the contour algorithm.
+<br />
+<br />
+Before:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/dark.png" alt="circles" />
+</div>
+<p><br />
+After:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/contourcopy.png" alt="circles" />
+</div>
+
+<p>The contour image can then be imported into VectorWorks and cleaned up. The following image is
+showing some of the steps.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/VWsteps.png" alt="circles" />
+</div>
+
+<ul>
+  <li>the polygon is created using the inner boundary mode attribute in the tools.</li>
+  <li>the shape is simplified (using modify -&gt; drafting aids -&gt; simplify polys)</li>
+  <li>tiles are added to the path (duplicate along path)</li>
+</ul>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/tilespath.png" alt="circles" />
+</div>
+
+<p>Using this method I am planning to chose certain colors and have them “break” the grid-system. Then, hopefully, for the manual work, all I have to do is follow these instructions etched into the surface telling me what angle to place the tiles in and what color to use.
+Here’s a few examples of the glass/ceramic tiles I’m considering for the image:</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-04/stone.png" alt="circles" />
+</div>
+
+<p>The process is almost like a digital litograph. Selecting a color individually, getting the contour of its shape and then adding its “instructions” to the image.</p>
+
+<p><br />
+<br /></p>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>
