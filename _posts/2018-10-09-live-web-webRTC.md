@@ -10,7 +10,7 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>
 This week in live-web we were working on webRTC (real time communication). This also introduced
 us to HTTPS to set up a secure connection for our pages using keys and certificates. Our assignment was to create something using the ability to share camera images.
 
-I did not fully manage to complete this task. I underestimated to amount of time needed to set up a HTTPs connection for the first time.
+I did not fully manage to complete this task. I underestimated the amount of time needed to set up a HTTPs connection for the first time.
 
 The first hurdle was getting the example sketch from our class to work. I was receiving the same error
 over and over again.  
