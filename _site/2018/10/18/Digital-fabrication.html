@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<title>blogpage</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="/"><strong>Home</strong></a></li>
+    <li><a href="/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="/"><strong>Home</strong></a></li>
+        <li><a href="/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Designing for Digital Fabrication - Midterm pt 1. </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by Simon M. Jensen</span>
+    <span> - October 18, 2018</span>
+  </div>
+
+
+
+        <p>Ask proposed for the midterm project I have been working on replicating an oil painting
+into a mosaic picture. The idea was to take an already existing image and run it through processing sketch that turns the pixels into tiles. These tiles would be located in a grid system similar to the image below.</p>
+
+<p>Original image:</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/original.png" alt="circles" />
+</div>
+
+<p>After running the tile sketch:</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/tiles.png" alt="circles" />
+</div>
+
+<p>This same program would do color-detection to determine the color of the tile. Since colors do not get transferred into VectorWorks - the program would provide a letter in each tile indicating the color of it to help in with color placement later (Before this I had decided on 9 colors I wanted to split the image into)</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/lettersingrid.png" alt="circles" />
+</div>
+
+<p>In order to break up the grid system I decided to choose certain areas/colors from the image and get their contour. This was done with several of the “bigger” defining lines of the image. Here are examples of extracting red, cyan and the dark colors.</p>
+
+<p>red:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/red.png" alt="circles" />
+</div>
+
+<p>cyan:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/cyan.png" alt="circles" />
+</div>
+
+<p>dark:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/dark.png" alt="circles" />
+</div>
+
+<p>The contour of these areas/colors were then transported into Vectorworks for further manipulation. By using the polygon fill function I would get a polygon shaped like the inside of the contour. See image:</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/getShape.png" alt="circles" />
+</div>
+
+<p>I could then use the “duplicate along path” to create tiles of the right size (9mm x 9mm) along the path of the shape. The intention was to get a shape similar to the original contour - but instead of lines, it would be created of squares. In order for this to work well I had to do some “polysmoothing” in VectorWorks. Also, the “duplicate along path” would place tiles on the line of the polygon. This would make the shape bigger than the original one - so I had to minimize the polygonshape by half of the tile - so that when the tiles were placing along the edge - I would have the size of the original polygon.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/duplicate.png" alt="circles" />
+</div>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/shapesmall.png" alt="circles" />
+</div>
+
+<p>With this done I could place the “tile-contour” over the grid and get my final instruction regarding tile placement in a manner similar to this.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/comparison.png" alt="circles" />
+</div>
+
+<p>These instructions were etched into a wooden panel to which I would glue my smalti mosaic glass tiles ordered from <a href="https://mosaicartsupply.com/">this mosaic store</a>.</p>
+
+<p>The tiles came in a rectangular shape so I would also need a glass cutter to separate the tiles into to rectangular shapes.</p>
+
+<p>The setup looked like this:</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/wood.png" alt="circles" />
+</div>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/setup.png" alt="circles" />
+</div>
+
+<p>After cutting the glass I would glue them on one by one using epoxy glue. The progressing was slower than I though. These images show the progression over the first few nights.</p>
+
+<p>First night:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/mos1.png" alt="circles" />
+</div>
+
+<p>Second night:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/mos2.png" alt="circles" />
+</div>
+
+<p>Third night:</p>
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/mos3.png" alt="circles" />
+</div>
+
+<p>The final part now is glueing the last tiles to the panel. Which will probably take another few nights. After that I will add white grout to the spacing between the tiles. I did a rough sample that looks like this.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2018-10-18/grout.png" alt="circles" />
+</div>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>

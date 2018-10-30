@@ -1,0 +1,1315 @@
+GET /asyncpanels/mini/frontpage_latest_all?1519649788 HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+If-None-Match: "1540873692-0"
+If-Modified-Since: Tue, 30 Oct 2018 04:28:12 GMT
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: m.php.web.tv2net.dk Port=80 processing time = D=1120414 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: m.php.web.tv2net.dk Port=86 processing time = D=1119240 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: user-agent, x-requested-with, Content-Type, origin, accept
+Access-Control-Allow-Method: GET, OPTIONS
+Etag: "1540873687-0"
+Last-Modified: Tue, 30 Oct 2018 04:28:07 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 2056
+Date: Tue, 30 Oct 2018 04:32:25 GMT
+Age: 245
+Connection: keep-alive
+X-Varnish-Cache-Control: public, max-age=300
+Cache-Control: no-cache, must-revalidate
+
+...........Z.r.6.}.W..%.
+jJ....d&.i..&v......	.....>(........f.)..m.d.D..s....,.S...j...A......).^M.\._1/..../>j...o.T...f..
+.p..2....?..r.Y.=.......f1...'..~...(.>e......6b.<..K;.......W^.g.....*.T.U#.k..e)5...."....w.k%M.M..t&9..3...;-.=Fw..!I.*......Riq.....s...lZ...>..u~.#.....Wo~?......!}.....-.lt....T6.....I.o.....yUJ.y9o5A...^..g......t8N..?&.4I.w |......h.<.>=..........7...*.......V.....~KD.'.j...........Ya....v).....[$S9.... ......zU0.1.M.m..>.......~E...
+h).( P.y....x..W.QD.C.$
+.'(.4..T>....?:a3.S.qn.e.Fi...g\7.TZ.
+._.j........g...4......`......q.3........!M....`...oy.|$..|.!..Y..0..x.y..12:9..S...#....H#/?.G.....g.....6...	..$l.."p+.
+.4..-kG..n.]f.|.E...D........-: :l...p.H....D.........{..8.&k.g..e..z.+.l%.g..$...qh.f.....FF.....~%.?./.b..k.%.......Zx xZ...v...{.....6y.....=.X..$M............3....}.@.w^26.....W......n..{.pU..-.~..Z.........M....4.vy..3r...r..#
+.?.TbQ?.~._...S.W..V.A.X.N.J.(.9zT..D....f.K...3=..T.E.......@.A.(.5tH..kl..A<..;
+..k
+.h<9JG'.5..}../.....2|-..m'.q..q.
+.s..iI>g....I......
+...0_~...~#K...B..B._?.(4<J....G=5L..O..\..eV..).]b...%.......d!.,......h...J._......5.&`....ry.......Mk...
+;.Q........1C.W..w...yB........K..M..........+	.wiZ.-..]+.(..k...3I..Zdj.....T3\1:w....M...%....V.E...h.....	...Un.-.3n..5a....2:.C\\.5.0.Y.~
+...
+.(d|.	D".q....Z....p...v.D..+.
+..9.....`..t..
+.....Y.u.I..........7.mF.:....n..X^.#..1...%.....J..(...^.(..b.
+k.2.)..[..#,..iF.<..t...gx...........G..-.h.Lxl.*C49.r...#...._$...5..\_.2..=.SUb.RvY.3....%...\.............e.f..#l......X.Q2L....I.(..{.%w.../.V...=.
+!.ii......x..&Z6....!E..*..Z.5=Y....y....'(...'...D@D..Q.}.r!.~.+..x.)E..XR...Cb.K.......q..mT.>.6...........hJ)...Ra.!.....iy.........($....D...t..L...'.[9...T7...`..>\...@..n...Q..?.<27.. \."....C...!
+u..h$......ObQ..Se..!.l(Ma....
+.`q.vP..9~......BO.....g.2...F"..8..O...........L8U,...WZy%,.P.H..si.J...-]..zp..A..1.rG.....mz.:p..h.EuR.Z^..LX[.t.n.	......
+].,.#..YY	Ny.....l..DS.|...yK...\hZ......$-.})...r%.......Pv.8..d......${y.~C.8.',..Q..............y.)w.?.G..C.g.......u.B..<.X.w.....Q.............Rb..9..GET /asyncpanels/mini/front_sidebar_webtv?1519649788 HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+If-None-Match: "1540873901-0"
+If-Modified-Since: Tue, 30 Oct 2018 04:31:41 GMT
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=80 processing time = D=1112831 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=86 processing time = D=1111775 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: user-agent, x-requested-with, Content-Type, origin, accept
+Access-Control-Allow-Method: GET, OPTIONS
+Etag: "1540873666-0"
+Last-Modified: Tue, 30 Oct 2018 04:27:46 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 1951
+Date: Tue, 30 Oct 2018 04:32:25 GMT
+Age: 278
+Connection: keep-alive
+X-Varnish-Cache-Control: public, max-age=300
+Cache-Control: no-cache, must-revalidate
+
+.............n#......h.X_..}>(..$6...U...0...9.p...J.....{.XjHJ+.*+..#.1..e.XU.wO}]..>..j..k.....Fl..zr....e........v...{....j.G.3[....U.Ii....N..u..........M.3........s........M.b.c..x6K..#...k...]k.
+...2......tC.1.{.C..e.}..j1..0..j.ok.W.....t.....t.\/3N{?\...b...l.4..;....^.9.f	.
+..4....6w...5.>7t...2.....8.v....M....P.....2TC.O'......;....<0N.8yh.<0.....J..t.,..Z...3g.*....3.W..	.........^9.;....z...	I0....N.;Q. ....(..*.......l.;.....T.....4m.........*?Rzgf.........}.N'.i.
+....
+.....v.....~.D./4.,.BU....
+.%....e.....wk<.U.._..n........{..9E..k.k<3.....4,..o.{'....b9l[_C....oqGNE......Rp.lJ......8H.....1^.l.Do.$.b.,s...o.++t.
+..B.8.Qe..........4.Nj.....r.sP.&a.s>h...A....rs ...../.q..O....d.\....:.`M....F(.....1$..S,
+..__...".y R..#.ft	=)..K.D@5R.^...6,8...\....vv"..5A.W.2..W._...]....l.Q.!5.t]...9..~.8
+.......s.o...Z..s..........y...............r.	...@(..|.....v..M...}.,.....K...'y....q.>........w8.....=Xw
+$..!..mi.
+..zsq...Rr3.U..{N+...!..]..n..r.iqi.e..L..%4==.x..._......w.K}N*.wE....".\.(dtE..^...D.7Dgm............(.K
+x".	1.<.3fq...]	....r...F8abb*8...I...+*....JYg.s.|4......d.........0.....`...+.P<2;."S...... ..<..GS.......f.w....I.P.R.oPIK.A....I.(.K...:&0..g..h"..s,A........[
+A
+.=&C.C4....g...M
+....H. h.~...../I..b...~......~....L.M.*..G...........=V..r....j.z.!..5Mm......yE.
+.........h..!.O@..mG....D....@v.p.........fE(i6....;.>...g....4.o...:.+...II.........V.Fi..As..K.I8..r.V#..T.`..1XiL....N.%.x..$j..z.94?.....(....F...." ..N.:..(..
+...........NJ.5..?..GS....W.l.<.$.6R...9).....v.B-=..3..AL)X..P*x.,..M..4.6'..k...(KT,.!..X...@...<....p..4HpN..X...s..Qdr.. #?0..d.....EX.RL...{..r...=]../..@.r..oW+...
+...a3T.........J...>..?....e2.......i.5M.L.6...~K.u02be.....2.S...TEx_
+.A....d"..U..k.F.......	XY...HXOI.......Y>G.........~..Ve.x.`.[o.....,...6........e.[Sp....^X	.>..GS...-x.J,.e..9.....J._	...F.B.k.....c	..h@..*<..G....].......&3.J)...
+.G.)p.....v...&X.............o.q<...(..x._........}............w....GET /asyncpanels/mini/front_deck_region_lorry?1519649788 HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+If-None-Match: "1540873870-0"
+If-Modified-Since: Tue, 30 Oct 2018 04:31:10 GMT
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: k.php.web.tv2net.dk Port=80 processing time = D=887427 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: k.php.web.tv2net.dk Port=86 processing time = D=886275 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: user-agent, x-requested-with, Content-Type, origin, accept
+Access-Control-Allow-Method: GET, OPTIONS
+Etag: "1540873885-0"
+Last-Modified: Tue, 30 Oct 2018 04:31:25 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 1868
+Date: Tue, 30 Oct 2018 04:32:35 GMT
+Age: 59
+Connection: keep-alive
+X-Varnish-Cache-Control: public, max-age=300
+Cache-Control: no-cache, must-revalidate
+
+...........Z.n.6..?Oqj..........)......Xl...
+..(..%jH.6..y.....#)N..t....M. ..D.....|>.Y.g0.T.A+&c.A.).S..P.._..8..F.^/..u...DG........Qe.X..uI...)X.....9L.H.....h...a8.Ea.X4hM........c3..Tjy.&N.>a.Ii..ESChDt2
+[.#......n......P...A..8.M..g.h	....K...Y.....!.<.1.iw....hV........x.Ep..g...#.....z~6.!......r...<.Lf..8......G..r~..T....P..X33h9N..9.UL}....8c..]..x......~..^..#.x.w<o.._....Knd.y..?!.W..%^e..tj. .*..h.d>.......A..._\...;...Go.}.h>.:..dp......Aa........C......h...N.............v'...
+\P....@px...Kt....yp........C.H4N.....Q.Sr.&Y".{....]
+I1GT...2.[`k..H..Q.9.....kv...9UJ....F1.}.#./......G[c.b....I..;."........MLg.o:.+%.2.:........).I.z../,...	S..S3-....*.i...p....$.i.%....!...8.x....!.....M.tK..................6./.Hz?d_..A-.,..z.Y.54A..k..f............u4B.._t.6..{..K6..._3.-A.{.....}.1L....d#.M.,.	QL.:E.e..g..DB..+.	..f4..."<.^..q	...r	.K(\.L*..@.P.}t...L.51...H.BN..?.tA.<4...I./...Q.Hd....M.t.`._........f.......$.....&m	.........X.U..]..M....x.^b}...X...%(.j]...Ni.....dY.R.pe	K.:..mT.,e.....*O..p0:.. .YW...6.K@fK...)j.T.$.*..-..2\......m......	..X;...]..b.z..?.@L.....|....s..Auh.......Z....fE......m..%..Li.-he....6..R.6....V6M=.g....{..{.hyFR/G#c..{x5....D.../.	U....,6DLq..I.t4.jF...o6.F....]m.....X...Z.h.z........P
+..(.8.....w.........~...Q..@."....Q#Z...D.7.;)Dk0v....s7}ho..&....Q.Z...8..]v.....H..K...e/.x.............{.].~G.8......^.......}.m..NQW....(fd...z-.=)o$*.b.Pc2Q.....s."v%......7X..i.:.........p7....p.9.."...E[
+.4.}..........m.K.v.....0.Ip.0...M...
+.2.D.{..It.
+.M......p.......^..)._,uQm.t.>
+.$b#.3....T.N....r...{.0....
+.P.......7o.0...-...o...W?.. ?.@.;..@Q.om.y..m..35......>...QR'4##.g.....t.....e..a.u......!...B..]P..	.4.u].1k...f2..e0.....s...&..&.H.9.q.
+.@.,.....i...N..?N...fp.N....E..@{!..U.G.....i.\..B..YBf...!....H.[(....e_......................="...t...e.....H..g..U..a.V.
+.}d/l...?I%{...u............	...F..GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=80 processing time = D=270759 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=86 processing time = D=269768 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:32:55 GMT
+Age: 16
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: q.php.web.tv2net.dk Port=80 processing time = D=317158 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: q.php.web.tv2net.dk Port=86 processing time = D=316076 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:33:06 GMT
+Age: 32
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=80 processing time = D=286800 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=86 processing time = D=285590 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:33:40 GMT
+Age: 42
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=80 processing time = D=303313 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=86 processing time = D=302586 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:33:47 GMT
+Age: 15
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: f.php.web.tv2net.dk Port=80 processing time = D=295292 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: f.php.web.tv2net.dk Port=86 processing time = D=294402 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:34:17 GMT
+Age: 39
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=80 processing time = D=303313 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=86 processing time = D=302586 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:34:29 GMT
+Age: 56
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: k.php.web.tv2net.dk Port=80 processing time = D=271937 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: k.php.web.tv2net.dk Port=86 processing time = D=270882 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:34:49 GMT
+Age: 18
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: k.php.web.tv2net.dk Port=80 processing time = D=271937 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: k.php.web.tv2net.dk Port=86 processing time = D=270882 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:35:10 GMT
+Age: 39
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=80 processing time = D=285860 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=86 processing time = D=284793 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:35:40 GMT
+Age: 6
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=80 processing time = D=285860 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: h.php.web.tv2net.dk Port=86 processing time = D=284793 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:36:02 GMT
+Age: 28
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: e.php.web.tv2net.dk Port=80 processing time = D=285960 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: e.php.web.tv2net.dk Port=86 processing time = D=284888 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:36:27 GMT
+Age: 34
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: e.php.web.tv2net.dk Port=80 processing time = D=285960 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: e.php.web.tv2net.dk Port=86 processing time = D=284888 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:36:47 GMT
+Age: 54
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=80 processing time = D=358961 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=86 processing time = D=357764 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:36:55 GMT
+Age: 27
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: b.php.web.tv2net.dk Port=80 processing time = D=301197 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: b.php.web.tv2net.dk Port=86 processing time = D=300377 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:37:16 GMT
+Age: 48
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: m.php.web.tv2net.dk Port=80 processing time = D=296730 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: m.php.web.tv2net.dk Port=86 processing time = D=295628 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:37:50 GMT
+Age: 0
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: q.php.web.tv2net.dk Port=80 processing time = D=312947 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: q.php.web.tv2net.dk Port=86 processing time = D=311530 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:38:06 GMT
+Age: 35
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=80 processing time = D=312007 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=86 processing time = D=311137 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:38:17 GMT
+Age: 52
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: j.php.web.tv2net.dk Port=80 processing time = D=284519 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: j.php.web.tv2net.dk Port=86 processing time = D=283542 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:38:39 GMT
+Age: 14
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=80 processing time = D=289402 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=86 processing time = D=288087 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:39:12 GMT
+Age: 24
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: q.php.web.tv2net.dk Port=80 processing time = D=319595 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: q.php.web.tv2net.dk Port=86 processing time = D=318616 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:39:29 GMT
+Age: 1
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: r.php.web.tv2net.dk Port=80 processing time = D=303948 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: r.php.web.tv2net.dk Port=86 processing time = D=303081 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:39:41 GMT
+Age: 18
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: m.php.web.tv2net.dk Port=80 processing time = D=281504 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: m.php.web.tv2net.dk Port=86 processing time = D=280297 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:40:15 GMT
+Age: 29
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=80 processing time = D=281706 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=86 processing time = D=280869 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:40:22 GMT
+Age: 1
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: c.php.web.tv2net.dk Port=80 processing time = D=274872 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: c.php.web.tv2net.dk Port=86 processing time = D=273768 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:40:44 GMT
+Age: 23
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=80 processing time = D=305176 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=86 processing time = D=303529 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:41:18 GMT
+Age: 33
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=80 processing time = D=305176 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=86 processing time = D=303529 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:41:39 GMT
+Age: 54
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=80 processing time = D=286768 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: s.php.web.tv2net.dk Port=86 processing time = D=285166 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:42:00 GMT
+Age: 17
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: g.php.web.tv2net.dk Port=80 processing time = D=283149 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: g.php.web.tv2net.dk Port=86 processing time = D=281987 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:42:07 GMT
+Age: 49
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=80 processing time = D=280002 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=86 processing time = D=279031 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:42:42 GMT
+Age: 1
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: o.php.web.tv2net.dk Port=80 processing time = D=325511 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: o.php.web.tv2net.dk Port=86 processing time = D=324401 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:42:50 GMT
+Age: 32
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=80 processing time = D=306123 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=86 processing time = D=305246 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:43:20 GMT
+Age: 57
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=80 processing time = D=294904 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=86 processing time = D=293773 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:43:32 GMT
+Age: 17
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=80 processing time = D=294904 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: p.php.web.tv2net.dk Port=86 processing time = D=293773 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:43:54 GMT
+Age: 38
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=80 processing time = D=289246 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=86 processing time = D=288267 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:44:24 GMT
+Age: 5
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: f.php.web.tv2net.dk Port=80 processing time = D=295411 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: f.php.web.tv2net.dk Port=86 processing time = D=294453 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:44:49 GMT
+Age: 11
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=80 processing time = D=289246 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=86 processing time = D=288267 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:45:06 GMT
+Age: 47
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=80 processing time = D=294940 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=86 processing time = D=293766 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:45:17 GMT
+Age: 3
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=80 processing time = D=294940 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=86 processing time = D=293766 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:45:37 GMT
+Age: 23
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=80 processing time = D=281678 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: d.php.web.tv2net.dk Port=86 processing time = D=280829 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:46:12 GMT
+Age: 36
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....GET /t2breakingbar HTTP/1.1
+Host: shared.tv2.dk
+Connection: keep-alive
+Accept: */*
+Origin: http://tv2.dk
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+Sec-Metadata: destination="", site=same-site
+Referer: http://tv2.dk/
+Accept-Encoding: gzip, deflate
+Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7
+
+HTTP/1.1 200 OK
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=80 processing time = D=294810 uS
+X-UA-Compatible: IE=Edge,chrome=1
+TV2-Proxy-Host: l.php.web.tv2net.dk Port=86 processing time = D=293828 uS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Content-Encoding: gzip
+Vary: Accept-Encoding,HTTPS,X-SSL-OFFLOAD
+Content-Length: 22
+Date: Tue, 30 Oct 2018 04:46:29 GMT
+Age: 13
+Connection: keep-alive
+X-Varnish-Cache-Control: max-age=58, public
+Cache-Control: no-cache, must-revalidate
+
+..............).L
+....

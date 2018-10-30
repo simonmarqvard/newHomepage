@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live-web - Midterm Proposal
-postHero: /blog_assets/2018-10-16/messenger-Logo.jpg
+postHero: /blog_assets/2018-10-16/Messenger-Logo.jpg
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
