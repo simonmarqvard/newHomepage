@@ -1,0 +1,27 @@
+
+server.get("/state", (req, res) => {
+  res.json(state)
+});
+
+
+server.get("/connect", (req, res) => {
+  res.json(state.connection)
+});
+
+server.get("/people", (req, res) => {
+  res.json({
+    "people": state.numPeople
+  })
+});
+
+server.get("/tempo", (req, res) => {
+  res.json(state.tempoVal)
+});
+
+server.get("/dance", (req, res) => {
+  res.json(state.danceNum)
+});
+
+server.get("/color", (req, res) => {
+  res.json(state.floorHue)
+});

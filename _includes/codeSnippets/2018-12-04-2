@@ -1,0 +1,29 @@
+server.post("/connect", (req, res) => {
+  //True
+
+  // state.connection = !state.connection
+  state.connection = true
+  if (state.connection) {
+    res.json({
+      message: "You are now connected to the server"
+    })
+    io.sockets.emit('state', {
+      connection: state.connection,
+      numPeople: state.numPeople,
+      danceNum: state.danceNum,
+      tempoVal: state.tempoVal,
+      floorHue: state.floorHue
+    })
+  } else {
+    res.json({
+      message: "You disconnected from the server"
+    })
+    io.sockets.emit('state', {
+      connection: state.connection,
+      numPeople: state.numPeople,
+      danceNum: state.danceNum,
+      tempoVal: state.tempoVal,
+      floorHue: state.floorHue
+    })
+  }
+});
