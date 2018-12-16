@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-12-04/main.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: Arduino, Sockets.io, RESTful, server, node.js
 ---
 
 Assignment : "Over the next three weeks, you'll design RESTful web interface to a physical device. Your device can either be a controller that sends data to the web interface, or an actuator that is controlled by the web interface."
@@ -51,7 +52,7 @@ Based on the API we received from Jason and Roxanne we knew that there were thre
  We agreed that a wifi-connection led was necessary, as all communication would happen over wifi using the Arduino maker 1000. We agreed to use switches for the pattern states (Fire, Rainbow, Lightning), a circular soft potentiometer for color and a chickenhead knob potentiometer for speed.
 
 <div class="aroundImage">
-<img src="/blog_assets/2018-12-04/buttons.jpg"
+<img src="/blog_assets/2018-12-04/buttons.JPG"
      alt="circles">
 </div>
 

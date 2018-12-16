@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-10-18/tiles.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: Processing, VectorWorks
 ---
 
 Ask proposed for the midterm project I have been working on replicating an oil painting

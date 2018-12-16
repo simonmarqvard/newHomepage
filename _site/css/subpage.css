@@ -23,6 +23,12 @@ html, body {
   vertical-align: middle;
 }
 
+.tools span {
+  font-size: 12px;
+  vertical-align: middle;
+  color: orange;
+}
+
 
  /* NAVIGATION BLOCK */
 

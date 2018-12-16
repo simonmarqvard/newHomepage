@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-11-01/rhino.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: CAD design software, Rhino, VectorWorks
 ---
 
 This week for Designing for Digital Fabrication I am presenting on the Rhinoceros® CAD (Computer Aided Drawing) software - Also referred to as Rhino. It is developed by Robert McNeel and Associates.

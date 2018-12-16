@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-10-29/cover.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: Herbivore, WireShark, networks
 ---
 
 This weeks assignment was to explore package sniffing. The past few weeks we have been introduced to programs like Herbivore and Wireshark for capturing and analyzing traffic on our home networks.

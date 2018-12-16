@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-09-25/imageFront.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: nodejs, IP-API, TraceRoute, mappa.js
 ---
 
 This week in Understanding Networks our assignment was to explore the TraceRoute commando.

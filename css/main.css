@@ -37,7 +37,7 @@ html, body {
   background-color: white;
   width: 50%;
   /* divide 100% with the number of columns */
-  height: 33%;
+  height: 25%;
   opacity: 0;
 }
 
@@ -62,6 +62,11 @@ html, body {
 }
 
 .imagesetup span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.tools {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }

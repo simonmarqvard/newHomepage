@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-12-12/postcard.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: Robotjs, Opentype.js, Sockets.io, Node.js
 ---
 
 For the final project I revisited a prior assignment from the first weeks of this class. I wanted to create something that looked like human handwriting

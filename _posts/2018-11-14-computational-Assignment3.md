@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-11-14/main.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: P5.js, HTML
 ---
 
 This weeks assignment was to create a piece that exploits the possibilities of computation. The constraints were only to use HTML, CSS and Javascript to create the piece, and manipulate all elements programmatically - no existing marked-up text!

@@ -12,6 +12,7 @@ layout: blogpage
         <img src = "{{ post.gravatar }} " class="social-link">
         <span class="author"> by {{ post.author}}</span>
         <span> - {{ post.date | date: '%B %d, %Y' }}</span>
+        <span style="color:orange"> - Topics: {{ post.Topics }} </span>
       </div>
         <a href="{{ post.url }}"><div class="blogImage" style="background-image:url({{ post.postHero }})"></div>
         {{ post.excerpt }}

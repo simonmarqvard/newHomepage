@@ -5,6 +5,7 @@ postHero: /blog_assets/2018-10-09/image4.png
 author: Simon M. Jensen
 gravatar: /images/homepageprofile.jpg
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+Topics: HTTPS-server, Sockets.io, WebRTC
 ---
 
 This week in live-web we were working on webRTC (real time communication). This also introduced
