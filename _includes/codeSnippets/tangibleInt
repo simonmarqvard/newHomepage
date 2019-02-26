@@ -1,0 +1,153 @@
+#include "MIDIUSB.h"
+
+//functions for nodeOn and nodeOff
+void noteOn(byte channel, byte pitch, byte velocity) {
+  midiEventPacket_t noteOn = {0x09, 0x90 | channel, pitch, velocity};
+  MidiUSB.sendMIDI(noteOn);
+}
+
+void noteOff(byte channel, byte pitch, byte velocity) {
+  midiEventPacket_t noteOff = {0x08, 0x80 | channel, pitch, velocity};
+  MidiUSB.sendMIDI(noteOff);
+}
+
+// these constants won't change:
+const int ledPin = 9;
+const int knockSensor5 = A5;
+const int knockSensor4 = A4;
+const int knockSensor3 = A3;
+const int knockSensor2 = A2;
+const int threshold = 100;
+const int instrumentOn = 14;
+
+
+// these variables will change:
+int sensorReading1 = 0;
+int sensorReading2 = 0;
+int sensorReading3 = 0;
+int sensorReading4 = 0;
+int ledState = LOW;
+int toggle = 5;
+long interval = 100;
+long previousMillis = 0;
+
+
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  pinMode(instrumentOn, OUTPUT);
+  pinMode(toggle, INPUT_PULLUP);
+  Serial.begin(115200);
+}
+
+// First parameter is the event type (0x0B = control change).
+// Second parameter is the event type, combined with the channel.
+// Third parameter is the control number number (0-119).
+// Fourth parameter is the control value (0-127).
+
+
+  boolean once = false;
+
+
+void loop() {
+
+  int power = digitalRead(toggle);
+
+  //power switch - if power is not on do nothing
+  if (power == LOW) {
+    digitalWrite(instrumentOn,LOW);
+    return;
+  }
+
+  //power on -> light on
+  digitalWrite(instrumentOn, HIGH);
+
+
+  //first bar hit detection + timer + debounce
+  sensorReading1 = analogRead(knockSensor5);
+    unsigned long currentMillis = millis();
+  if (once == false && sensorReading1  >= threshold) {
+    ledState = HIGH;
+    digitalWrite(ledPin, ledState);
+    Serial.println("Sending note on");
+    noteOn(0, 40, 64);   // Channel 0, middle C, normal velocity
+    once = true;
+        previousMillis = currentMillis;
+
+  } else {
+    ledState = false;
+    digitalWrite(ledPin, ledState);
+  }
+  if (currentMillis - previousMillis > interval && once) {
+    Serial.println("stop");
+    Serial.println("Sending note off");
+    noteOff(0, 40, 64);  // Channel 0, middle C, normal velocity
+    once = false;
+  }
+
+
+  //second bar
+  sensorReading2 = analogRead(knockSensor4);
+    if (once == false && sensorReading2  >= threshold) {
+    ledState = HIGH;
+    digitalWrite(ledPin, ledState);
+    Serial.println("Sending note on");
+    noteOn(0, 50, 64);   // Channel 0, middle C, normal velocity
+    once = true;
+        previousMillis = currentMillis;
+
+  } else {
+    ledState = false;
+    digitalWrite(ledPin, ledState);
+  }
+  if (currentMillis - previousMillis > interval && once) {
+    Serial.println("stop");
+    Serial.println("Sending note off");
+    noteOff(0, 50, 64);  // Channel 0, middle C, normal velocity
+    once = false;
+  }
+
+
+   //third bar
+  sensorReading3 = analogRead(knockSensor3);
+    if (once == false && sensorReading3  >= threshold) {
+    ledState = HIGH;
+    digitalWrite(ledPin, ledState);
+    Serial.println("Sending note on");
+    noteOn(0, 60, 64);   // Channel 0, middle C, normal velocity
+    once = true;
+        previousMillis = currentMillis;
+
+  } else {
+    ledState = false;
+    digitalWrite(ledPin, ledState);
+  }
+  if (currentMillis - previousMillis > interval && once) {
+    Serial.println("stop");
+    Serial.println("Sending note off");
+    noteOff(0, 60, 64);  // Channel 0, middle C, normal velocity
+    once = false;
+  }
+
+    //fourth bar
+    sensorReading4 = analogRead(knockSensor2);
+    if (once == false && sensorReading4  >= threshold) {
+    ledState = HIGH;
+    digitalWrite(ledPin, ledState);
+    Serial.println("Sending note on");
+    noteOn(0, 70, 64);   // Channel 0, middle C, normal velocity
+    once = true;
+        previousMillis = currentMillis;
+
+  } else {
+    ledState = false;
+    digitalWrite(ledPin, ledState);
+  }
+  if (currentMillis - previousMillis > interval && once) {
+    Serial.println("stop");
+    Serial.println("Sending note off");
+    noteOff(0, 70, 64);  // Channel 0, middle C, normal velocity
+    once = false;
+  }
+
+}
