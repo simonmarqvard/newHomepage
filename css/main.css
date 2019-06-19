@@ -17,7 +17,7 @@ html, body {
 
 
 .mainpagecolumns {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   display: flex;
 }
 
@@ -49,10 +49,11 @@ html, body {
   line-height: 100%;
 }
 
-.imagesetup p {
+.layerText {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
+  width: 80%;
   transform: translateX(-50%) translateY(-50%);
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
@@ -60,6 +61,38 @@ html, body {
   letter-spacing: 3px;
   line-height: normal;
 }
+
+.header {
+ font-size: 15px;
+ text-decoration: underline;
+}
+
+.title {
+font-size: 24px;
+
+}
+
+.school {
+font-size: 10px;
+
+}
+
+.nyuLogo {
+  position: absolute;
+  width: 20%;
+  top: 5%;
+  right:42px;
+  opacity: 1;
+}
+
+.kuLogo {
+  position: absolute;
+  width: 9%;
+  top: 13%;
+  right:60px;
+  opacity: 1;
+}
+
 
 .imagesetup span {
   font-family: 'Open Sans', sans-serif;
@@ -255,8 +288,14 @@ html, body {
   background-color: white;
   min-width: 305px;
 }
+.nyuLogo {
+  right: 30px;
+  top: 2%;
 }
-
+.kuLogo {
+  right: 42px;
+  top: 6%;
+}
 
 @media only screen and (max-width: 700px) {
 .imagesetup .layercontainer .layer {

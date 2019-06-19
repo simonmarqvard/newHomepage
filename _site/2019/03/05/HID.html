@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/monokai.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<title>blogpage</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<!-- <script src="sketch.js"></script> -->
+
+
+</head>
+
+<body>
+
+
+<div class="pageWrapper">
+<div class="mainpagecolumns">
+
+  <div class="navColumn">
+  <div>
+   <ul>
+    <li><a href="/"><strong>Home</strong></a></li>
+    <li><a href="/blog/"><strong>Blog</strong></a></li>
+    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+    <li><a href="/about"><strong>About</strong></a></li>
+  </ul>
+  </div>
+</div>
+
+
+	<div class="imageColumn">
+    <div class="navigationWrapper">
+     <div class="blogcolumn">
+       <div><div class="projectsintrotext">
+        <div class="miniNavColumn">
+       <ul class="miniNavColumnlist">
+        <li><a href="/"><strong>Home</strong></a></li>
+        <li><a href="/blog"><strong>Blog</strong></a></li>
+        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
+        <li><a href="/about"><strong>About</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+        <!-- <h1> BLOGPAGE <h1> -->
+<h2> Tangible interactions - Control for ImageJ </h2>
+
+
+  <div class="blogpost-header">
+    <img src = "/images/homepageprofile.jpg " class="social-link">
+    <span class="author"> by Simon M. Jensen</span>
+    <span> - March 05, 2019</span>
+  </div>
+
+
+
+        <p>Our assignment for next week is to build a USB HID (human interface device) for a specific purpose. This blogpost is intended to elaborate in the idea that I have for the project.</p>
+
+<p>My idea is to build a control for ImageJ. ImageJ is a software used in many research settings for analyzing data. The program was used extensively in the research lab where I previously worked and performed my experiments on macrophages.
+I would assume that I have analyzed roughly 1500-2000 cell images with imageJ over the past years. Each image analysis takes about 10-20 minutes depending on what you analyze, measure etc. Wherever you manage to win a few seconds it really adds up in the long run. For this reason I decided to create a control for that program - as it could potentially save people from days of work!</p>
+
+<p>The problem with imageJ is that you are using the mouse for everything. In my case I would be counting the number of different types of cells. For this specific task I would need to open the three following windows in addition to the image I am analyzing:</p>
+
+<p><strong>1 Channel tools:</strong> You count cells based on the antibody that binds to them. Different antibodies will have different colors based on RGB color. The channel tools are used to add/subtract certain colors to see if a cell is pos+/neg- to some or all colors.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2019-03-05/cells.png" alt="circles" />
+</div>
+
+<p><strong>2 Brightness Contrast:</strong> Is used to adjust colors up and down. Images will have different color intensities based on their channel. This can adjust that.</p>
+
+<p><strong>3 Cell counter:</strong> This plugin is used to select the cell type. When you click your image the counter goes up.</p>
+
+<p>This is what the setup looks like.</p>
+
+<div class="aroundImage">
+<img src="/blog_assets/2019-03-05/img.png" alt="circles" />
+</div>
+
+<p>One of the things slowing down the analysis is the fact that everything is build around the mouse. You constantly have to tick/untick boxes, adjust color values and change cell types - with only the mouse to do this, you find yourself wasting a lot of time.</p>
+
+<p>My idea is to build a physical control that you use with the mouse. This way you can use the mouse to locate cells on an image - while all adjustments to the image are made with the control.</p>
+
+<p><strong> Important control tasks: </strong> <br />
+-Adding/removing each of the three channels (Red, Green, Blue) <br />
+-Choosing a cell type (Type1, Type2, Type3 etc) <br />
+-Adjusting the color balance for each of the 3 channels (Red, Green, Blue).</p>
+
+<p><strong> Additional feature (if time allows): </strong> <br />
+-Opening the 3 windows with one button press?</p>
+
+<p>I’m planning on using buttons to add/remove channels and selecting cells.
+To adjust the color balance of the red, green and blue channel I want to use slide potentiometers.
+One idea I’m playing with is saving the previously used combination of R,G,B values. Often, values from one image works well with the next (Is this what motorized potentiometers are for? - Saving a value and finding it again?)</p>
+
+<p>In order for this to work I need to make some “shortcuts” in the ImageJ library that my controller can communicate with.</p>
+
+<p><br />
+<br /></p>
+
+
+    
+     </div>
+   </div>
+ </div>
+
+
+</body>
+</html>
