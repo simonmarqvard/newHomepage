@@ -26,16 +26,18 @@
 <div class="pageWrapper">
 <div class="mainpagecolumns">
 
-  <div class="navColumn">
-  <div>
-   <ul>
-    <li><a href="/"><strong>Home</strong></a></li>
-    <li><a href="/blog/"><strong>Blog</strong></a></li>
-    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
-    <li><a href="/about"><strong>About</strong></a></li>
-  </ul>
-  </div>
-</div>
+  <h1>Simon Jensen</h1>
+<p class="info">
+  Researcher interested in the intersection between humans and technology. Dual
+  masters degree holder with a MPS in Interactive Technology and a MSc. in Human
+  Physiology. Interested in using programming languages to explore, create and
+  promote new insights that impact humans. This page shows some of my current
+  and previous projects.
+</p>
+<nav>
+  <a href="/">Home</a> <a href="/blog/">Blog</a>
+  <a href="https://github.com/simonmarqvard">Code</a> <a href="/about">About</a>
+</nav>
 
 
 	<div class="imageColumn">
@@ -101,13 +103,13 @@ assignment was to get familiar with one of them and create a sketch using data f
   <span class="o">&lt;</span>
   <span class="nx">head</span> <span class="o">&gt;</span>
   <span class="o">&lt;</span>
-  <span class="nx">meta</span> <span class="nx">charset</span> <span class="o">=</span> <span class="s2">"UTF-8"</span> <span class="o">&gt;</span>
+  <span class="nx">meta</span> <span class="nx">charset</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">UTF-8</span><span class="dl">"</span> <span class="o">&gt;</span>
   <span class="o">&lt;</span>
   <span class="nx">title</span> <span class="o">&gt;</span> <span class="nx">D3introsketch</span> <span class="o">&lt;</span> <span class="sr">/title&gt; </span><span class="err">&lt;
-</span>  <span class="nx">script</span> <span class="nx">src</span> <span class="o">=</span> <span class="s2">"https://d3js.org/d3.v3.min.js"</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="sr">/script&gt; </span><span class="err">&lt;
-</span>  <span class="nx">script</span> <span class="nx">src</span> <span class="o">=</span> <span class="s2">"http://d3js.org/topojson.v0.min.js"</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="sr">/script&gt; </span><span class="err">&lt;
-</span><span class="nx">link</span> <span class="nx">rel</span> <span class="o">=</span> <span class="s2">"stylesheet"</span>
-<span class="nx">href</span> <span class="o">=</span> <span class="s2">"style.css"</span> <span class="o">&gt;</span>
+</span>  <span class="nx">script</span> <span class="nx">src</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">https://d3js.org/d3.v3.min.js</span><span class="dl">"</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="sr">/script&gt; </span><span class="err">&lt;
+</span>  <span class="nx">script</span> <span class="nx">src</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://d3js.org/topojson.v0.min.js</span><span class="dl">"</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="sr">/script&gt; </span><span class="err">&lt;
+</span><span class="nx">link</span> <span class="nx">rel</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">stylesheet</span><span class="dl">"</span>
+<span class="nx">href</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">style.css</span><span class="dl">"</span> <span class="o">&gt;</span>
 
   <span class="o">&lt;</span>
   <span class="sr">/script</span><span class="err">&gt;
@@ -123,58 +125,58 @@ assignment was to get familiar with one of them and create a sketch using data f
   <span class="p">.</span><span class="nx">scale</span><span class="p">(</span><span class="mi">6500</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">translate</span><span class="p">([</span><span class="nx">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">height</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
 
-<span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">"body"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s2">"svg"</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"width"</span><span class="p">,</span> <span class="nx">width</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"height"</span><span class="p">,</span> <span class="nx">height</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="dl">"</span><span class="s2">body</span><span class="dl">"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="dl">"</span><span class="s2">svg</span><span class="dl">"</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">width</span><span class="dl">"</span><span class="p">,</span> <span class="nx">width</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">height</span><span class="dl">"</span><span class="p">,</span> <span class="nx">height</span><span class="p">);</span>
 
 <span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">geo</span><span class="p">.</span><span class="nx">path</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">projection</span><span class="p">(</span><span class="nx">projection</span><span class="p">);</span>
 
-<span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"g"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">"</span><span class="s2">g</span><span class="dl">"</span><span class="p">);</span>
 
-<span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="s2">"Denmark.json"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">topology</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="dl">"</span><span class="s2">Denmark.json</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">topology</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">topology</span><span class="p">.</span><span class="nx">objects</span><span class="p">.</span><span class="nx">DNK_adm2</span><span class="p">.</span><span class="nx">geometries</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">properties</span><span class="p">.</span><span class="nx">NAME_2</span><span class="p">)</span>
   <span class="c1">//console.log(topology.objects.IND_adm1.geometries[0].properties.ID_1)</span>
-  <span class="nx">g</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">"path"</span><span class="p">)</span>
+  <span class="nx">g</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">path</span><span class="dl">"</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="nx">topojson</span><span class="p">.</span><span class="nx">object</span><span class="p">(</span><span class="nx">topology</span><span class="p">,</span> <span class="nx">topology</span><span class="p">.</span><span class="nx">objects</span><span class="p">.</span><span class="nx">DNK_adm2</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">geometries</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">enter</span><span class="p">()</span>
-    <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"path"</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"class"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">"</span><span class="s2">path</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
       <span class="c1">//return "state" + topology.objects.IND_adm1.geometries[i].properties.ID_1;</span>
-      <span class="k">return</span> <span class="s2">"state"</span><span class="p">;</span>
+      <span class="k">return</span> <span class="dl">"</span><span class="s2">state</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">})</span>
-    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"mouseover"</span><span class="p">,</span> <span class="nx">handlemouseover</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"mouseout"</span><span class="p">,</span> <span class="nx">handlemouseout</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">mouseover</span><span class="dl">"</span><span class="p">,</span> <span class="nx">handlemouseover</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">mouseout</span><span class="dl">"</span><span class="p">,</span> <span class="nx">handlemouseout</span><span class="p">)</span>
 
     <span class="c1">// .attr("text-anchor", "middle")</span>
     <span class="c1">// .text(function(d,i) {</span>
     <span class="c1">//  return topology.objects.DNK_adm2.geometries[0].properties.NAME_2</span>
     <span class="c1">// })</span>
 
-    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"d"</span><span class="p">,</span> <span class="nx">path</span><span class="p">);</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">,</span> <span class="nx">path</span><span class="p">);</span>
 <span class="p">})</span>
 
-<span class="nx">d3</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">"svg"</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"class"</span><span class="p">,</span> <span class="s2">"path"</span><span class="p">)</span>
+<span class="nx">d3</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">svg</span><span class="dl">"</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">path</span><span class="dl">"</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">"fill"</span><span class="p">,</span> <span class="s2">"lightgreen"</span><span class="p">);</span>
+  <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="dl">"</span><span class="s2">fill</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">lightgreen</span><span class="dl">"</span><span class="p">);</span>
 
 
 <span class="kd">function</span> <span class="nx">handlemouseover</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
     <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="s2">"translate(0, -50)"</span><span class="p">);</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">transform</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">translate(0, -50)</span><span class="dl">"</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">handlemouseout</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
     <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="s2">"translate(0, 0)"</span><span class="p">);</span>
+    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">transform</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">translate(0, 0)</span><span class="dl">"</span><span class="p">);</span>
 <span class="p">}</span>
 
 
