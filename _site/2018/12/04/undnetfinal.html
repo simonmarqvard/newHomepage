@@ -26,16 +26,18 @@
 <div class="pageWrapper">
 <div class="mainpagecolumns">
 
-  <div class="navColumn">
-  <div>
-   <ul>
-    <li><a href="/"><strong>Home</strong></a></li>
-    <li><a href="/blog/"><strong>Blog</strong></a></li>
-    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
-    <li><a href="/about"><strong>About</strong></a></li>
-  </ul>
-  </div>
-</div>
+  <h1>Simon Jensen</h1>
+<p class="info">
+  Researcher interested in the intersection between humans and technology. Dual
+  masters degree holder with a MPS in Interactive Technology and a MSc. in Human
+  Physiology. Interested in using programming languages to explore, create and
+  promote new insights that impact humans. This page shows some of my current
+  and previous projects.
+</p>
+<nav>
+  <a href="/">Home</a> <a href="/blog/">Blog</a>
+  <a href="https://github.com/simonmarqvard">Code</a> <a href="/about">About</a>
+</nav>
 
 
 	<div class="imageColumn">
@@ -150,30 +152,30 @@ When we had our controller connecting the the server, we “beautified” our co
 <p>Structure of get requests that would return the requested variable.</p>
 <div>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/state"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/state</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">state</span><span class="p">)</span>
 <span class="p">});</span>
 
 
-<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/connect"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/connect</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">connection</span><span class="p">)</span>
 <span class="p">});</span>
 
-<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/people"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/people</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span>
-    <span class="s2">"people"</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">numPeople</span>
+    <span class="dl">"</span><span class="s2">people</span><span class="dl">"</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">numPeople</span>
   <span class="p">})</span>
 <span class="p">});</span>
 
-<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/tempo"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/tempo</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">tempoVal</span><span class="p">)</span>
 <span class="p">});</span>
 
-<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/dance"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/dance</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">danceNum</span><span class="p">)</span>
 <span class="p">});</span>
 
-<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/color"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">server</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/color</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">floorHue</span><span class="p">)</span>
 <span class="p">});</span></code></pre></figure>
 
@@ -182,16 +184,16 @@ When we had our controller connecting the the server, we “beautified” our co
 <p>Example of server response to a post request. This is example is telling the user to connect to the server before making changes.</p>
 <div>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">server</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">"/connect"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">server</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">"</span><span class="s2">/connect</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="c1">//True</span>
 
   <span class="c1">// state.connection = !state.connection</span>
   <span class="nx">state</span><span class="p">.</span><span class="nx">connection</span> <span class="o">=</span> <span class="kc">true</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">connection</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span>
-      <span class="na">message</span><span class="p">:</span> <span class="s2">"You are now connected to the server"</span>
+      <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">You are now connected to the server</span><span class="dl">"</span>
     <span class="p">})</span>
-    <span class="nx">io</span><span class="p">.</span><span class="nx">sockets</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">'state'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">io</span><span class="p">.</span><span class="nx">sockets</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="dl">'</span><span class="s1">state</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
       <span class="na">connection</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">connection</span><span class="p">,</span>
       <span class="na">numPeople</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">numPeople</span><span class="p">,</span>
       <span class="na">danceNum</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">danceNum</span><span class="p">,</span>
@@ -200,9 +202,9 @@ When we had our controller connecting the the server, we “beautified” our co
     <span class="p">})</span>
   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span>
-      <span class="na">message</span><span class="p">:</span> <span class="s2">"You disconnected from the server"</span>
+      <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">You disconnected from the server</span><span class="dl">"</span>
     <span class="p">})</span>
-    <span class="nx">io</span><span class="p">.</span><span class="nx">sockets</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">'state'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">io</span><span class="p">.</span><span class="nx">sockets</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="dl">'</span><span class="s1">state</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
       <span class="na">connection</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">connection</span><span class="p">,</span>
       <span class="na">numPeople</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">numPeople</span><span class="p">,</span>
       <span class="na">danceNum</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">danceNum</span><span class="p">,</span>

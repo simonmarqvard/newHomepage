@@ -26,16 +26,18 @@
 <div class="pageWrapper">
 <div class="mainpagecolumns">
 
-  <div class="navColumn">
-  <div>
-   <ul>
-    <li><a href="/"><strong>Home</strong></a></li>
-    <li><a href="/blog/"><strong>Blog</strong></a></li>
-    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
-    <li><a href="/about"><strong>About</strong></a></li>
-  </ul>
-  </div>
-</div>
+  <h1>Simon Jensen</h1>
+<p class="info">
+  Researcher interested in the intersection between humans and technology. Dual
+  masters degree holder with a MPS in Interactive Technology and a MSc. in Human
+  Physiology. Interested in using programming languages to explore, create and
+  promote new insights that impact humans. This page shows some of my current
+  and previous projects.
+</p>
+<nav>
+  <a href="/">Home</a> <a href="/blog/">Blog</a>
+  <a href="https://github.com/simonmarqvard">Code</a> <a href="/about">About</a>
+</nav>
 
 
 	<div class="imageColumn">
@@ -178,25 +180,25 @@ It ended up looking like this:</p>
   <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">&amp;&amp;</span> <span class="nx">circle1</span><span class="p">.</span><span class="nx">isInside</span><span class="p">())</span> <span class="p">{</span>
     <span class="nx">circle1</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">mouseX</span><span class="p">;</span>
     <span class="nx">circle1</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">mouseY</span><span class="p">;</span>
-    <span class="nx">text</span><span class="p">(</span><span class="s2">"Circle x:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle1</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" y:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle1</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle1</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle1</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="nx">text</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle x:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle1</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> y:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle1</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle1</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle1</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
   <span class="p">}</span>
 
   <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">&amp;&amp;</span> <span class="nx">circle2</span><span class="p">.</span><span class="nx">isInside</span><span class="p">())</span> <span class="p">{</span>
     <span class="nx">circle2</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">mouseX</span><span class="p">;</span>
     <span class="nx">circle2</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">mouseY</span><span class="p">;</span>
-    <span class="nx">text</span><span class="p">(</span><span class="s2">"Circle x:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle2</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" y:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle2</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle2</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle2</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="nx">text</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle x:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle2</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> y:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle2</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle2</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle2</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
   <span class="p">}</span>
 
   <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">&amp;&amp;</span> <span class="nx">circle3</span><span class="p">.</span><span class="nx">isInside</span><span class="p">())</span> <span class="p">{</span>
     <span class="nx">circle3</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">mouseX</span><span class="p">;</span>
     <span class="nx">circle3</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">mouseY</span><span class="p">;</span>
-    <span class="nx">text</span><span class="p">(</span><span class="s2">"Circle x:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle3</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" y:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle3</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle3</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle3</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="nx">text</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle x:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle3</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> y:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle3</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle3</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle3</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
   <span class="p">}</span>
 
   <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">&amp;&amp;</span> <span class="nx">circle4</span><span class="p">.</span><span class="nx">isInside</span><span class="p">())</span> <span class="p">{</span>
     <span class="nx">circle4</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">mouseX</span><span class="p">;</span>
     <span class="nx">circle4</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">mouseY</span><span class="p">;</span>
-    <span class="nx">text</span><span class="p">(</span><span class="s2">"Circle x:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle4</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" y:"</span> <span class="o">+</span> <span class="kr">int</span><span class="p">(</span><span class="nx">circle4</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle4</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle4</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+    <span class="nx">text</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle x:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle4</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> y:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">int</span><span class="p">(</span><span class="nx">circle4</span><span class="p">.</span><span class="nx">y</span><span class="p">),</span> <span class="nx">circle4</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">circle4</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 

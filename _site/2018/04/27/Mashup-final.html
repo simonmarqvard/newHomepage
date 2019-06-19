@@ -26,16 +26,18 @@
 <div class="pageWrapper">
 <div class="mainpagecolumns">
 
-  <div class="navColumn">
-  <div>
-   <ul>
-    <li><a href="/"><strong>Home</strong></a></li>
-    <li><a href="/blog/"><strong>Blog</strong></a></li>
-    <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
-    <li><a href="/about"><strong>About</strong></a></li>
-  </ul>
-  </div>
-</div>
+  <h1>Simon Jensen</h1>
+<p class="info">
+  Researcher interested in the intersection between humans and technology. Dual
+  masters degree holder with a MPS in Interactive Technology and a MSc. in Human
+  Physiology. Interested in using programming languages to explore, create and
+  promote new insights that impact humans. This page shows some of my current
+  and previous projects.
+</p>
+<nav>
+  <a href="/">Home</a> <a href="/blog/">Blog</a>
+  <a href="https://github.com/simonmarqvard">Code</a> <a href="/about">About</a>
+</nav>
 
 
 	<div class="imageColumn">
@@ -85,21 +87,21 @@ Another challenge was that I wanted to display the information in a d3 sketch. I
 <p>Previously, when playing around with d3, I found a tutorial showing how to create a 3 dimensional globe or a orthographic globe projection - which it is also called. The link can be found here: <a href="https://github.com/d3/d3-geo/blob/master/README.md#geoPath">globe</a>. The sketch on my brainstorm image is based on that projection.
 My first objective was to get the Google Trends API to work. I had some valuable help from a classmate who had succesfully used that API for another project. Together we set up an account on digitalocean and created a droplet for this project. This setup would create a server from which I could access the data through node. The serverside code is displayed in the following.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">)</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">)</span>
 <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
-<span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Example app listening on port 2000!'</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Example app listening on port 2000!</span><span class="dl">'</span><span class="p">)</span>
 <span class="p">})</span>
 
 <span class="c1">//get data from google trends api</span>
-<span class="kd">const</span> <span class="nx">googleTrends</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'google-trends-api'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">googleTrends</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">google-trends-api</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="c1">//every time theres a new selected country or new keyword, a new</span>
 <span class="c1">//route is created with that keyword and selectedCountry</span>
 <span class="c1">//https://expressjs.com/en/guide/routing.html//</span>
-<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/trends/:keyword/:selectedCountry/:startDate"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/trends/:keyword/:selectedCountry/:startDate</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">params</span><span class="p">);</span>
 
   <span class="nx">googleTrends</span><span class="p">.</span><span class="nx">interestOverTime</span><span class="p">({</span>
@@ -110,25 +112,25 @@ My first objective was to get the Google Trends API to work. I had some valuable
     <span class="c1">//resolution: 'CITY',</span>
     <span class="c1">//  granularTimeResolution: true,</span>
   <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">results</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'oh no error!'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">oh no error!</span><span class="dl">'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
     <span class="k">else</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
       <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">results</span><span class="p">);;</span>
     <span class="p">}</span>
   <span class="p">});</span>
 <span class="p">});</span>
 
-<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/trends/:worldinputTerm"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"IM A RUNNING"</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/trends/:worldinputTerm</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">IM A RUNNING</span><span class="dl">"</span><span class="p">);</span>
 
   <span class="nx">googleTrends</span><span class="p">.</span><span class="nx">interestByRegion</span><span class="p">({</span>
       <span class="na">keyword</span><span class="p">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">worldinputTerm</span><span class="p">,</span>
       <span class="na">startTime</span><span class="p">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()),</span>
-      <span class="na">endTime</span><span class="p">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">'2018-01-01'</span><span class="p">),</span>
-      <span class="na">resolution</span><span class="p">:</span> <span class="s1">'COUNTRY'</span>
+      <span class="na">endTime</span><span class="p">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="dl">'</span><span class="s1">2018-01-01</span><span class="dl">'</span><span class="p">),</span>
+      <span class="na">resolution</span><span class="p">:</span> <span class="dl">'</span><span class="s1">COUNTRY</span><span class="dl">'</span>
     <span class="p">},</span>
     <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">results</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'oh no error!'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">oh no error!</span><span class="dl">'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
       <span class="k">else</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">results</span><span class="p">)</span>
         <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">results</span><span class="p">);;</span>
@@ -138,7 +140,7 @@ My first objective was to get the Google Trends API to work. I had some valuable
 
 <span class="c1">//app use is called every time a request is sent to server</span>
 <span class="c1">//serves a static file</span>
-<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="s1">'public'</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kd">static</span><span class="p">(</span><span class="dl">'</span><span class="s1">public</span><span class="dl">'</span><span class="p">));</span>
 </code></pre></div></div>
 
 <p>I had to make two separate requests. One asking for trends over time - another
@@ -156,13 +158,13 @@ make a global search for trends. Which would make a more interesting comparison.
 <p>Using jQuery I created some input boxes on the screen. The information from these boxes would be used for a $.ajax “get request” that would pull out new information from the Google-API and draw the new chart. Getting the search information from the input box (word and date), creating a new get request from the server and drawing the chart was done using the following code.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">searchWord</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'#chessBoardButton'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">inputTerm</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#inputBox'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s2">".selectedSearchWord"</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s2">".selectedSearchWord"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">inputTerm</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s2">".info"</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">"display"</span><span class="p">,</span> <span class="s2">"none"</span><span class="p">)</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#chessBoardButton</span><span class="dl">'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">inputTerm</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#inputBox</span><span class="dl">'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">.selectedSearchWord</span><span class="dl">"</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">.selectedSearchWord</span><span class="dl">"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">inputTerm</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">.info</span><span class="dl">"</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">)</span>
 
-    <span class="nx">startDate</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#startDate'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+    <span class="nx">startDate</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#startDate</span><span class="dl">'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">startDate</span><span class="p">)</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">selectedCountry</span><span class="p">)</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inputTerm</span><span class="p">)</span>
@@ -176,14 +178,14 @@ make a global search for trends. Which would make a more interesting comparison.
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">selectedCountry</span><span class="p">);</span>
   <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
     <span class="c1">//makes request to localhost:2000/trends</span>
-    <span class="na">url</span><span class="p">:</span> <span class="s2">"/trends/"</span> <span class="o">+</span> <span class="nx">inputTerm</span> <span class="o">+</span> <span class="s2">"/"</span> <span class="o">+</span> <span class="nx">selectedCountry</span> <span class="o">+</span> <span class="s2">"/"</span> <span class="o">+</span> <span class="nx">startDate</span><span class="p">,</span>
-    <span class="na">type</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span>
-    <span class="na">dataType</span><span class="p">:</span> <span class="s2">"json"</span><span class="p">,</span>
+    <span class="na">url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">/trends/</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">inputTerm</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">/</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">selectedCountry</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">/</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">startDate</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GET</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="dl">"</span><span class="s2">json</span><span class="dl">"</span><span class="p">,</span>
     <span class="na">error</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"yikes there's an error"</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">yikes there's an error</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
     <span class="p">},</span>
     <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"GETTING DATA"</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">GETTING DATA</span><span class="dl">"</span><span class="p">);</span>
       <span class="c1">//    console.log(data.default.timelineData.length)</span>
       <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="k">default</span><span class="p">.</span><span class="nx">timelineData</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">googleDataValues</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="k">default</span><span class="p">.</span><span class="nx">timelineData</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
@@ -204,13 +206,13 @@ I wanted to be able to click a country on the globe and have that country be the
 my API request - meaning the country I was searching the information from. The Google-Api geo expected a two letter abbreviation for a country fx. DK, GB, US. However, the Paths (country-lines) in the d3 world sketch only came with a code 004, 008 etc. To convert, I imported a second json.file called convertfile.json. This file had all countries listed with all information and could convert the country codes into two-letter-alpha codes that could go into the API.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//import convertfile</span>
-<span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="s2">"convertfile.json"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="dl">"</span><span class="s2">convertfile.json</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">countryCodeData</span> <span class="o">=</span> <span class="nx">code</span><span class="p">;</span>
 <span class="p">});</span>
 
 <span class="kd">function</span> <span class="nx">drawWorld</span><span class="p">(){</span>
   <span class="c1">//load the paths (countries with codename)</span>
-  <span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="s2">"world.json"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">world</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="dl">"</span><span class="s2">world.json</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">world</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">//access the codename</span>
     <span class="kd">var</span> <span class="nx">geojson</span> <span class="o">=</span> <span class="nx">topojson</span><span class="p">.</span><span class="nx">feature</span><span class="p">(</span><span class="nx">world</span><span class="p">,</span> <span class="nx">world</span><span class="p">.</span><span class="nx">objects</span><span class="p">.</span><span class="nx">countries</span><span class="p">);</span>
 
@@ -220,8 +222,8 @@ my API request - meaning the country I was searching the information from. The G
       <span class="nx">countryCodeData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">){</span>
 <span class="c1">//if id from world file is equal to country code from convertfile</span>
 <span class="c1">//change worlds countrycode to two-letter code</span>
-        <span class="k">if</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">id</span> <span class="o">==</span> <span class="nx">element</span><span class="p">[</span><span class="s2">"country-code"</span><span class="p">]){</span>
-          <span class="nx">d</span><span class="p">.</span><span class="nx">countryCode</span> <span class="o">=</span> <span class="nx">element</span><span class="p">[</span><span class="s2">"alpha-2"</span><span class="p">];</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">id</span> <span class="o">==</span> <span class="nx">element</span><span class="p">[</span><span class="dl">"</span><span class="s2">country-code</span><span class="dl">"</span><span class="p">]){</span>
+          <span class="nx">d</span><span class="p">.</span><span class="nx">countryCode</span> <span class="o">=</span> <span class="nx">element</span><span class="p">[</span><span class="dl">"</span><span class="s2">alpha-2</span><span class="dl">"</span><span class="p">];</span>
           <span class="p">}</span>
         <span class="p">})</span>
       <span class="k">return</span> <span class="nx">d</span><span class="p">;</span> <span class="c1">// #W()@U#OIWUJKNWJ!IW</span>
@@ -238,12 +240,12 @@ countries based on the popularity of the search.</p>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getWorldData</span><span class="p">(</span><span class="nx">worldinputTerm</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
     <span class="c1">//makes request to localhost;2000/trends</span>
-    <span class="na">url</span><span class="p">:</span> <span class="s2">"/trends/"</span> <span class="o">+</span> <span class="nx">worldinputTerm</span><span class="p">,</span>
-    <span class="na">type</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span>
-    <span class="na">dataType</span><span class="p">:</span> <span class="s2">"json"</span><span class="p">,</span>
+    <span class="na">url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">/trends/</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">worldinputTerm</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GET</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="dl">"</span><span class="s2">json</span><span class="dl">"</span><span class="p">,</span>
     <span class="na">async</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="na">error</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"yikes there's an error"</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">yikes there's an error</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
     <span class="p">},</span>
     <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="k">default</span><span class="p">.</span><span class="nx">geoMapData</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -270,11 +272,11 @@ countries based on the popularity of the search.</p>
       <span class="c1">//most popular most orange - least popular = white</span>
       <span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">scale</span><span class="p">.</span><span class="nx">linear</span><span class="p">()</span>
         <span class="p">.</span><span class="nx">domain</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="nx">max</span><span class="p">])</span>
-        <span class="p">.</span><span class="nx">range</span><span class="p">([</span><span class="s2">"white"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">]);</span>
+        <span class="p">.</span><span class="nx">range</span><span class="p">([</span><span class="dl">"</span><span class="s2">white</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">orange</span><span class="dl">"</span><span class="p">]);</span>
 
       <span class="c1">//if the country code is equal to the received data color the country</span>
       <span class="nx">countries</span>
-        <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"fill"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">fill</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
           <span class="c1">// dataToReturn.forEach(function(freshD) {</span>
           <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">dataToReturn</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="kd">let</span> <span class="nx">freshD</span> <span class="o">=</span> <span class="nx">dataToReturn</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
