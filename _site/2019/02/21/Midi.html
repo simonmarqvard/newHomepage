@@ -158,38 +158,38 @@
 
 <div>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="err">#</span><span class="nx">include</span> <span class="dl">"</span><span class="s2">MIDIUSB.h</span><span class="dl">"</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="err">#</span><span class="nx">include</span> <span class="s2">"MIDIUSB.h"</span>
 
 <span class="c1">//functions for nodeOn and nodeOff</span>
-<span class="k">void</span> <span class="nx">noteOn</span><span class="p">(</span><span class="nx">byte</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">byte</span> <span class="nx">pitch</span><span class="p">,</span> <span class="nx">byte</span> <span class="nx">velocity</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">void</span> <span class="nx">noteOn</span><span class="p">(</span><span class="kr">byte</span> <span class="nx">channel</span><span class="p">,</span> <span class="kr">byte</span> <span class="nx">pitch</span><span class="p">,</span> <span class="kr">byte</span> <span class="nx">velocity</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">midiEventPacket_t</span> <span class="nx">noteOn</span> <span class="o">=</span> <span class="p">{</span><span class="mh">0x09</span><span class="p">,</span> <span class="mh">0x90</span> <span class="o">|</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">pitch</span><span class="p">,</span> <span class="nx">velocity</span><span class="p">};</span>
   <span class="nx">MidiUSB</span><span class="p">.</span><span class="nx">sendMIDI</span><span class="p">(</span><span class="nx">noteOn</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="k">void</span> <span class="nx">noteOff</span><span class="p">(</span><span class="nx">byte</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">byte</span> <span class="nx">pitch</span><span class="p">,</span> <span class="nx">byte</span> <span class="nx">velocity</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">void</span> <span class="nx">noteOff</span><span class="p">(</span><span class="kr">byte</span> <span class="nx">channel</span><span class="p">,</span> <span class="kr">byte</span> <span class="nx">pitch</span><span class="p">,</span> <span class="kr">byte</span> <span class="nx">velocity</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">midiEventPacket_t</span> <span class="nx">noteOff</span> <span class="o">=</span> <span class="p">{</span><span class="mh">0x08</span><span class="p">,</span> <span class="mh">0x80</span> <span class="o">|</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">pitch</span><span class="p">,</span> <span class="nx">velocity</span><span class="p">};</span>
   <span class="nx">MidiUSB</span><span class="p">.</span><span class="nx">sendMIDI</span><span class="p">(</span><span class="nx">noteOff</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c1">// these constants won't change:</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">ledPin</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">knockSensor5</span> <span class="o">=</span> <span class="nx">A5</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">knockSensor4</span> <span class="o">=</span> <span class="nx">A4</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">knockSensor3</span> <span class="o">=</span> <span class="nx">A3</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">knockSensor2</span> <span class="o">=</span> <span class="nx">A2</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">threshold</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">int</span> <span class="nx">instrumentOn</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">ledPin</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">knockSensor5</span> <span class="o">=</span> <span class="nx">A5</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">knockSensor4</span> <span class="o">=</span> <span class="nx">A4</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">knockSensor3</span> <span class="o">=</span> <span class="nx">A3</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">knockSensor2</span> <span class="o">=</span> <span class="nx">A2</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">threshold</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kd">const</span> <span class="kr">int</span> <span class="nx">instrumentOn</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
 
 
 <span class="c1">// these variables will change:</span>
-<span class="nx">int</span> <span class="nx">sensorReading1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="nx">int</span> <span class="nx">sensorReading2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="nx">int</span> <span class="nx">sensorReading3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="nx">int</span> <span class="nx">sensorReading4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="nx">int</span> <span class="nx">ledState</span> <span class="o">=</span> <span class="nx">LOW</span><span class="p">;</span>
-<span class="nx">int</span> <span class="nx">toggle</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-<span class="nx">long</span> <span class="nx">interval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-<span class="nx">long</span> <span class="nx">previousMillis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">sensorReading1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">sensorReading2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">sensorReading3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">sensorReading4</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">ledState</span> <span class="o">=</span> <span class="nx">LOW</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">toggle</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kr">long</span> <span class="nx">interval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kr">long</span> <span class="nx">previousMillis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
 
 
@@ -206,12 +206,12 @@
 <span class="c1">// Fourth parameter is the control value (0-127).</span>
 
 
-  <span class="nx">boolean</span> <span class="nx">once</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="kr">boolean</span> <span class="nx">once</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
 
 <span class="k">void</span> <span class="nx">loop</span><span class="p">()</span> <span class="p">{</span>
 
-  <span class="nx">int</span> <span class="nx">power</span> <span class="o">=</span> <span class="nx">digitalRead</span><span class="p">(</span><span class="nx">toggle</span><span class="p">);</span>
+  <span class="kr">int</span> <span class="nx">power</span> <span class="o">=</span> <span class="nx">digitalRead</span><span class="p">(</span><span class="nx">toggle</span><span class="p">);</span>
 
   <span class="c1">//power switch - if power is not on do nothing</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">power</span> <span class="o">==</span> <span class="nx">LOW</span><span class="p">)</span> <span class="p">{</span>
@@ -225,11 +225,11 @@
 
   <span class="c1">//first bar hit detection + timer + debounce</span>
   <span class="nx">sensorReading1</span> <span class="o">=</span> <span class="nx">analogRead</span><span class="p">(</span><span class="nx">knockSensor5</span><span class="p">);</span>
-    <span class="nx">unsigned</span> <span class="nx">long</span> <span class="nx">currentMillis</span> <span class="o">=</span> <span class="nx">millis</span><span class="p">();</span>
+    <span class="nx">unsigned</span> <span class="kr">long</span> <span class="nx">currentMillis</span> <span class="o">=</span> <span class="nx">millis</span><span class="p">();</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">once</span> <span class="o">==</span> <span class="kc">false</span> <span class="o">&amp;&amp;</span> <span class="nx">sensorReading1</span>  <span class="o">&gt;=</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">ledState</span> <span class="o">=</span> <span class="nx">HIGH</span><span class="p">;</span>
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note on</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note on"</span><span class="p">);</span>
     <span class="nx">noteOn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>   <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
         <span class="nx">previousMillis</span> <span class="o">=</span> <span class="nx">currentMillis</span><span class="p">;</span>
@@ -239,8 +239,8 @@
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">currentMillis</span> <span class="o">-</span> <span class="nx">previousMillis</span> <span class="o">&gt;</span> <span class="nx">interval</span> <span class="o">&amp;&amp;</span> <span class="nx">once</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">stop</span><span class="dl">"</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note off</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note off"</span><span class="p">);</span>
     <span class="nx">noteOff</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>  <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
   <span class="p">}</span>
@@ -251,7 +251,7 @@
     <span class="k">if</span> <span class="p">(</span><span class="nx">once</span> <span class="o">==</span> <span class="kc">false</span> <span class="o">&amp;&amp;</span> <span class="nx">sensorReading2</span>  <span class="o">&gt;=</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">ledState</span> <span class="o">=</span> <span class="nx">HIGH</span><span class="p">;</span>
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note on</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note on"</span><span class="p">);</span>
     <span class="nx">noteOn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>   <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
         <span class="nx">previousMillis</span> <span class="o">=</span> <span class="nx">currentMillis</span><span class="p">;</span>
@@ -261,8 +261,8 @@
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">currentMillis</span> <span class="o">-</span> <span class="nx">previousMillis</span> <span class="o">&gt;</span> <span class="nx">interval</span> <span class="o">&amp;&amp;</span> <span class="nx">once</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">stop</span><span class="dl">"</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note off</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note off"</span><span class="p">);</span>
     <span class="nx">noteOff</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>  <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
   <span class="p">}</span>
@@ -273,7 +273,7 @@
     <span class="k">if</span> <span class="p">(</span><span class="nx">once</span> <span class="o">==</span> <span class="kc">false</span> <span class="o">&amp;&amp;</span> <span class="nx">sensorReading3</span>  <span class="o">&gt;=</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">ledState</span> <span class="o">=</span> <span class="nx">HIGH</span><span class="p">;</span>
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note on</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note on"</span><span class="p">);</span>
     <span class="nx">noteOn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>   <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
         <span class="nx">previousMillis</span> <span class="o">=</span> <span class="nx">currentMillis</span><span class="p">;</span>
@@ -283,8 +283,8 @@
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">currentMillis</span> <span class="o">-</span> <span class="nx">previousMillis</span> <span class="o">&gt;</span> <span class="nx">interval</span> <span class="o">&amp;&amp;</span> <span class="nx">once</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">stop</span><span class="dl">"</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note off</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note off"</span><span class="p">);</span>
     <span class="nx">noteOff</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>  <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
   <span class="p">}</span>
@@ -294,7 +294,7 @@
     <span class="k">if</span> <span class="p">(</span><span class="nx">once</span> <span class="o">==</span> <span class="kc">false</span> <span class="o">&amp;&amp;</span> <span class="nx">sensorReading4</span>  <span class="o">&gt;=</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">ledState</span> <span class="o">=</span> <span class="nx">HIGH</span><span class="p">;</span>
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note on</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note on"</span><span class="p">);</span>
     <span class="nx">noteOn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>   <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
         <span class="nx">previousMillis</span> <span class="o">=</span> <span class="nx">currentMillis</span><span class="p">;</span>
@@ -304,8 +304,8 @@
     <span class="nx">digitalWrite</span><span class="p">(</span><span class="nx">ledPin</span><span class="p">,</span> <span class="nx">ledState</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">currentMillis</span> <span class="o">-</span> <span class="nx">previousMillis</span> <span class="o">&gt;</span> <span class="nx">interval</span> <span class="o">&amp;&amp;</span> <span class="nx">once</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">stop</span><span class="dl">"</span><span class="p">);</span>
-    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="dl">"</span><span class="s2">Sending note off</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">);</span>
+    <span class="nx">Serial</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">"Sending note off"</span><span class="p">);</span>
     <span class="nx">noteOff</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>  <span class="c1">// Channel 0, middle C, normal velocity</span>
     <span class="nx">once</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
   <span class="p">}</span>
