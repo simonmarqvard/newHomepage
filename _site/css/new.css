@@ -6,6 +6,11 @@ html {
   font-size: 100%;
 }
 
+.name {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   padding: 30px 20px;
 }
@@ -146,4 +151,9 @@ aside nav a {
   margin-top: 8px;
   max-width: 650px;
   line-height: 1.4em;
+}
+
+.project img:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
