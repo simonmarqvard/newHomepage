@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-{% include headblogpage.html %}
+{% include head.html %}
 <body>
 
 
-<div class="pageWrapper">
-<div class="mainpagecolumns">
+<body>
+  <div class="container">
+    <aside>{% include navigation.html %}</aside>
+    <div class="content">
+       <!-- <p> BLOGPAGE </p> -->
 
-  {% include navigation.html %}
-
-	<div class="imageColumn">
-    <div class="navigationWrapper">
-     <div class="blogcolumn">
-       <div>{% include Mininavigationsubpage.html %}</div>
         {{ content }}
+    <div>
      </div>
-   </div>
- </div>
+  </div>
 </body>
+
 </html>

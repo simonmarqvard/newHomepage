@@ -151,6 +151,7 @@ aside nav a {
   margin-top: 8px;
   max-width: 650px;
   line-height: 1.4em;
+  margin: auto;
 }
 
 .project img:hover {

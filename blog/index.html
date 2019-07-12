@@ -5,9 +5,9 @@ layout: blogpage
 <div class="blogprofiles">
   {% for post in site.posts %}
   <div class="blog">
-    <h2>
+    <p class="header-title">
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
+      </p>
         <div class="blogpost-header">
         <img src = "{{ post.gravatar }} " class="social-link">
         <span class="author"> by {{ post.author}}</span>

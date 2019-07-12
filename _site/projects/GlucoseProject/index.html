@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/css/new.css" />
+  <link rel="stylesheet" href="/css/blogpage.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <title>
@@ -24,55 +25,58 @@
   and previous projects.
 </p>
 <nav>
-  <a href="/">Home</a> <a href="/blog/">Blog</a>
-  <a href="https://github.com/simonmarqvard">Code</a> <a href="/about">About</a>
+  <a href="/">Home</a>
+  <a href="/blog/">Blog</a>
+  <a href="https://github.com/simonmarqvard">Code</a>
+  <a href="/about">About</a>
 </nav>
 </aside>
       <main class="projectDetail"><div class="projectsintrotext">
 
-  <h1> Glucose Project </h1>
-  <br>
-  <div class="tools">
-    <span> Tools: Node, Heroku, MongoDB, ChartJs, RESTful, JavaScript </span>
-    </div>
+  <h2> Glucose Project </h2>
+
+  <h3> Blood glucose planner and visualizer </h3>
 
   <div class="imagesetup">
    <img src="/projects/GlucoseProject/Glucose1200.gif" alt ="image"></a>
    <span> The layout from my glucose project. Each day is represented vertically. For
-   each day there are four measurements represented by charts. The charts show your values and
-    compare them to the recommended guidelines </span>
+   each day there are four measurements represented by charts. The charts show your values (green) and
+    compare them to the recommended guidelines (red). </span>
     </div>
 
+  <p> A data visualization project displaying blood glucose values
+     and comparing them to recommended guidelines. Using the button in the
+     corner of the display you can add your daily measurements and timepoints
+     to the 'calendar' that will dynamically expand to fit the added measurements.
+     Pressing submit stores the data in a Database (<a href="https://www.mongodb.com/">MongoDB</a>)
+     attached to the <a href="https://www.heroku.com/">Heroku</a> app rendering
+     and deploying the program. The charts are doughnut multi charts
+     from <a href="https://www.chartjs.org/">chart.js. </a> And everything
+     is stitched together using javaScript.
+   </p>
+
   <p>
-    This project was based on an assignment where we had to collect data about ourselves
-    and find a meaningful way to visualize it. I chose to collect blood droplets every
+    The idea for the project originated in a class where we had to collect data about ourselves
+    and create a meaningful visualization for it. From curiosity I chose to collect blood droplets every
     day using a blood glucose kit bought on the internet. The purpose was to investigate my
     blood sugar levels during a stressful week where sleep, exercise and healthy food is often
     neglected. I collected my measurements four
-    times every day for a week:
+    times every day for a week: Morning, before lunch, after lunch and before going to bed.
+  </p>
 
-    <ul>
-    <li>Morning
-    <li>Before lunch
-    <li>After lunch
-    <li>Before going to bed.
-    </ul>
+    <p>
+      The project can be seen <strong><a href="https://datameasuresapiofyou.herokuapp.com/displaydata">here</a></strong>
+      (Note: the sketch was built for a bigger display. To get an optimal view, zoom out)
+    </p>
+    <p>
+      More information about how the projects was created can be found in my
+      first blogpost <a href="/2018/04/18/API-of-you.html">here</a> and my
+      final blogpost about the project <a href="/2018/05/03/API-of-you-Final.html">here</a>.
+    </p>
 
-    Using the button in the corner of the display you can add your daily measurements and timepoints
-    to the 'calendar' that will dynamically expand to fit the added measurements.
-    Pressing >>submit<< stores the data in a Database (<a href="https://www.mongodb.com/">MongoDB</a>) attached to the
-     <a href="https://www.heroku.com/">Heroku</a> app rendering and deploying the program. The charts are doughnut multi charts
-    from <a href="https://www.chartjs.org/">chart.js. </a> And everything is stitched together using javaScript.
-     <br>
-    The project can be seen <strong><a href="https://datameasuresapiofyou.herokuapp.com/displaydata">here</a></strong>
-    (Note: the sketch was built for a bigger display. To get an optimal view, zoom out)
-    <br>
-    More information about how the projects was created can be found in my first blogpost <a href="/2018/04/18/API-of-you.html">here</a> and my
-    final blogpost about the project <a href="/2018/05/03/API-of-you-Final.html">here</a>.
-    <br>
-    Sourcecode can be found on Github <a href="https://github.com/simonmarqvard/APIofYouDatabase">here</a>.
-</p>
-</div>
+    <p>
+      Sourcecode can be found on Github <a href="https://github.com/simonmarqvard/APIofYouDatabase">here</a>.
+    </p>
 </main>
     </div>
   </body>
