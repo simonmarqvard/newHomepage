@@ -9,6 +9,8 @@ html {
 .name {
   text-decoration: none;
   color: black;
+  font-weight: 400;
+  letter-spacing: 4px;
 }
 
 body {
@@ -60,7 +62,7 @@ aside nav a {
   text-decoration: none;
   color: black;
   font-size: 25px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   line-height: 1.5em;
 }
 
@@ -72,9 +74,10 @@ aside nav a {
   text-decoration: none;
   color: black;
   font-size: 45px;
-  font-weight: normal;
+  font-weight: 300;
   margin-bottom: 5px;
   line-height: 1.1em;
+  letter-spacing: 2px;
 }
 
 .project h2 small {
@@ -136,8 +139,16 @@ aside nav a {
 
 .projectDetail h2 {
   font-size: 45px;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0 0 18px 0;
+  letter-spacing: 2px;
+}
+
+.projectDetail h3 {
+  font-size: 22;
+  font-weight: 300;
+  margin: 0 0 18px 0;
+  letter-spacing: 2px;
 }
 
 .imagesetup {
