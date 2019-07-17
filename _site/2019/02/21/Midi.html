@@ -4,34 +4,24 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/new.css" />
   <link rel="stylesheet" href="/css/blogpage.css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:600"
-    rel="stylesheet"
-  />
-  <title>blogpage</title>
-
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"
-  ></script>
-  <!-- <script src="sketch.js"></script> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <title>
+    Simon Marqvard Jensen - Researcher in the intersection of humans and
+    technology
+  </title>
 </head>
 
-<body>
-
-
-<div class="pageWrapper">
-<div class="mainpagecolumns">
-
-  <a href="/"><h1 class="name">Simon Marqvard Jensen</h1></a>
+  <body>
+    <div class="container">
+      <aside><a href="/"><h1 class="name">Simon Marqvard Jensen</h1></a>
 <p class="info">
   Researcher interested in the intersection between humans and technology. Dual
   masters degree holder with a MPS in Interactive Technology and a MSc. in Human
   Physiology. Interested in using programming languages to explore, create and
-  promote new insights that impact humans. This page shows some of my current
-  and previous projects.
+  promote new insights that impact humans.
 </p>
 <nav>
   <a href="/">Home</a>
@@ -39,23 +29,11 @@
   <a href="https://github.com/simonmarqvard">Code</a>
   <a href="/about">About</a>
 </nav>
+</aside>
+      <div class="content">
+         <!-- <p> BLOGPAGE </p> -->
 
-
-	<div class="imageColumn">
-    <div class="navigationWrapper">
-     <div class="blogcolumn">
-       <div><div class="projectsintrotext">
-        <div class="miniNavColumn">
-       <ul class="miniNavColumnlist">
-        <li><a href="/"><strong>Home</strong></a></li>
-        <li><a href="/blog"><strong>Blog</strong></a></li>
-        <li><a href="https://github.com/simonmarqvard"><strong>Code</strong></a></li>
-        <li><a href="/about"><strong>About</strong></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-        <!-- <h1> BLOGPAGE <h1> -->
+          <!-- <h1> BLOGPAGE <h1> -->
 <h2> Tangible Interactions - Midi Controller </h2>
 
 
@@ -71,7 +49,7 @@
 
 <p>For this assignment I first had to understand how MIDI works. I used some resources provided in class to get familiar with MIDI messsages and hexadecimal numbers to better understand the organization of the MIDI protocol (resources: <a href="https://tigoe.github.io/SoundExamples/midi.html">1</a>, <a href="https://tigoe.github.io/SoundExamples/midi.html">2</a>, <a href="https://tigoe.github.io/SoundExamples/midi.html">3</a>).</p>
 
-<div class="aroundImage">
+<div class="imagesetup">
 <img src="/blog_assets/2019-02-21/midi.JPG" alt="circles" />
 </div>
 
@@ -81,43 +59,17 @@
 
 <p>I attached the piezo to one of my bars and tested how reliable it was. It worked pretty well. However, as the video demonstrates there was a problem with my code. I was using a delay-function to decide the length of the node. Because of this delay I would not be able to hit two notes simultaneously or back to back. Instead, I created a timer that would set the tone length.</p>
 
-<div class="blogcolumn">
-    <div class="aroundSketch">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-IiN-4BHT9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="videoWrapper">
+  <iframe width="1200" height="675" src="https://www.youtube.com/embed/-IiN-4BHT9Q" frameborder="0" allowfullscreen=""></iframe>
 </div>
-</div>
-
-<p><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></p>
 
 <p>When I had the timer working I needed to make sure that hitting a bar would only trigger a node once. For that to work I was using a <a href="https://www.arduino.cc/en/Tutorial/Debounce">debounce</a>.</p>
 
 <p>At this point I had my bars working - and attached an on/off switch and a light to indicate whether the instrument was on/off and a light to indicate when a bar was triggered.</p>
 
-<div class="blogcolumn">
-    <div class="aroundSketch">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w77QoC-kpD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="videoWrapper">
+  <iframe width="1200" height="675" src="https://www.youtube.com/embed/w77QoC-kpD0" frameborder="0" allowfullscreen=""></iframe>
 </div>
-</div>
-
-<p><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></p>
 
 <p>I never made it to the point where I could have a sustained tone play in the background when holding down a button. My impression - when talking to other people in this class and people who use MIDI extensively - is that I spent too much time on the Arduino side of things. Instead of using Arduino code to determine the length of a node I should use the computer software to control it instead. Or I could have put a potentiometer into my controller to control the length of the node through the music software.</p>
 
@@ -125,34 +77,22 @@
 
 <p>This is what my project eventually looked like:</p>
 
-<div class="blogcolumn">
-    <div class="aroundSketch">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ddk3WCEniwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="videoWrapper">
+  <iframe width="1200" height="675" src="https://www.youtube.com/embed/ddk3WCEniwE" frameborder="0" allowfullscreen=""></iframe>
 </div>
-</div>
-
-<p><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></p>
 
 <p>Outside:</p>
 
-<div class="aroundImage">
+<div class="imagesetup">
 <img src="/blog_assets/2019-02-21/outside.JPG" alt="circles" />
+
 </div>
 
 <p>Inside:</p>
 
-<div class="aroundImage">
+<div class="imagesetup">
 <img src="/blog_assets/2019-02-21/inside.JPG" alt="circles" />
+
 </div>
 
 <p>The code:</p>
@@ -315,16 +255,8 @@
 
 </div>
 
-<p><br />
-<br /></p>
 
-
-
-     </div>
-   </div>
-
- </div>
-
-
-</body>
+      <div>
+    </div>
+  </body>
 </html>
