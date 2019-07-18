@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 1em 2em;
+  font-family: Guardian;
+  line-height: 1.4em;
+  font-size: 0.7em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Split columns
+-------------------------------------------- */
+
+.split {
+  border-bottom: 1px dashed gray;
+}
+
+.split:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.split div:first-child {
+  float: left;
+  padding-right: 3em;
+}
+
+.split div:last-child {
+  float: right;
+}
+
+.split.equal div:first-child {
+  width: 53%;
+}
+
+.split.equal div:last-child {
+  width: 47%;
+}
+
+.split.right div:first-child {
+  width: 35%;
+}
+
+.split.right div:last-child {
+  width: 65%;
+}
+
+/* Headings
+-------------------------------------------- */
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+h1 small {
+  font-size: 0.45em;
+  font-weight: normal;
+  display: block;
+  margin-top: 0.9em;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+h3 time {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+/* Body
+-------------------------------------------- */
+
+#profile {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+#contact {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  line-height: ;
+}
+
+#contact li {
+  margin-bottom: 0;
+}
+
+/* Lists
+-------------------------------------------- */
+
+ul {
+  padding-left: 0.8em;
+}
+
+ul li {
+  margin-bottom: 0.3em;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Guardian;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Regular-Web.eot);
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Regular-Web.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Regular-Web.woff)
+      format("woff"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Regular-Web.ttf)
+      format("truetype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Regular-Web.svg#Guardian)
+      format("svg");
+}
+
+@font-face {
+  font-family: Guardian;
+  font-weight: 400;
+  font-style: italic;
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-RegularIt-Web.eot);
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-RegularIt-Web.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-RegularIt-Web.woff)
+      format("woff"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-RegularIt-Web.ttf)
+      format("truetype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-RegularIt-Web.svg#Guardian)
+      format("svg");
+}
+
+@font-face {
+  font-family: Guardian;
+  font-weight: 600;
+  font-style: normal;
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Bold-Web.eot);
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Bold-Web.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Bold-Web.woff)
+      format("woff"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Bold-Web.ttf)
+      format("truetype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-Bold-Web.svg#Guardian)
+      format("svg");
+}
+
+@font-face {
+  font-family: Guardian;
+  font-weight: 600;
+  font-style: italic;
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-BoldIt-Web.eot);
+  src: url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-BoldIt-Web.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-BoldIt-Web.woff)
+      format("woff"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-BoldIt-Web.ttf)
+      format("truetype"),
+    url(https://duu86o6n09pv.cloudfront.net/fonts/GuardianText/GuardianTextSans-BoldIt-Web.svg#Guardian)
+      format("svg");
+}
