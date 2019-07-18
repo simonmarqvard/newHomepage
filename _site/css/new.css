@@ -7,9 +7,19 @@ html {
 }
 
 .name {
-  color: black;
-  font-weight: 400;
-  letter-spacing: 2px;
+  display: none;
+}
+
+.smallName {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 271px;
+}
+
+.info {
+  display: none;
 }
 
 body {
@@ -68,11 +78,13 @@ aside p.info {
 aside nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 0px auto 40px;
 }
 
 aside nav a {
   flex: 1;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   color: black;
   font-size: 25px;
@@ -147,6 +159,21 @@ aside nav a {
 
   .project h2 {
     margin-bottom: 15px;
+  }
+
+  .smallName {
+    display: none;
+  }
+
+  .name {
+    display: inline;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .info {
+    display: block;
   }
 }
 

@@ -8,7 +8,7 @@
   margin-top: 20px;
 }
 
-.info h3 {
+.personalInfo h3 {
   text-align: center;
   font-weight: 300;
   font-size: 18px;
@@ -16,7 +16,7 @@
   margin-top: 25px;
 }
 
-.info a {
+.personalInfo a {
   text-decoration: underline;
 }
 
