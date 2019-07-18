@@ -55,6 +55,10 @@ ul {
   text-decoration: none;
 }
 
+.navButton {
+  position: relative;
+}
+
 /* Small screens
 ------------------------------------------------- */
 
@@ -170,10 +174,28 @@ aside nav a {
     color: black;
     font-weight: 400;
     letter-spacing: 2px;
+    font-size: 36px;
   }
 
   .info {
     display: block;
+  }
+
+  .navButton:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .navButton:hover:before {
+    visibility: visible;
+    width: 35%;
   }
 }
 
